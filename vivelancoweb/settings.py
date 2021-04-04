@@ -32,7 +32,7 @@ SECRET_KEY = 'r&$mvrxo%k4@b0&9o3tg!d!59qh&bi73!(0-4m5vns79p_1(%!'
 DEBUG = True
 
 
-ALLOWED_HOSTS = [u'vivelanco.cl', u'www.vivelanco.cl', u'13.58.97.132']
+ALLOWED_HOSTS = [u'127.0.0.1',u'vivelanco.cl', u'www.vivelanco.cl', u'13.58.97.132']
 
 
 # Application definition
