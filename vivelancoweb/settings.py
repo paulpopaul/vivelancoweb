@@ -31,8 +31,10 @@ SECRET_KEY = 'r&$mvrxo%k4@b0&9o3tg!d!59qh&bi73!(0-4m5vns79p_1(%!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
 
+ALLOWED_HOSTS = [u'127.0.0.1', u'vivelanco.cl', u'www.vivelanco.cl', u'0.0.0.0']
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Application definition
 
@@ -53,6 +55,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'vivelancoweb.urls'
