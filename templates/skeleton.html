@@ -1,14 +1,25 @@
 
 <!DOCTYPE html>
-<html lang="es">
+<html class="no-js" lang="es">
 <head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9TM34S6MPT"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-9TM34S6MPT');
+</script>
 {% load static %}
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
-    <title>Vive Lanco - 2021</title>
-    <meta name="description" content="plataforma para centralizar el desarrollo del comercio y el turismo">
+    <title>Vive Lanco - Desarrollo de comercio y turismo</title>
+    <meta name="description" content="Desarrollo de comercio y turismo en Lanco">
     <meta name="author" content="Skeleton - Paul Joseph Pineda - 2021">
+    <meta name="description" content="Desarrollo de comercio y turismo en Lanco">
 
     <!-- mobile specific metas
     ================================================== -->
@@ -17,20 +28,21 @@
     <!-- CSS
     ================================================== -->
 
-    <link href="{% static '/css/base.css' %}" rel="stylesheet">
-	<link href="{% static '/css/vendor.css' %}" rel="stylesheet">
-	<link href="{% static '/css/main.css' %}" rel="stylesheet">
+    <link href="{% static 'css/base.css' %}" rel="stylesheet">
+	<link href="{% static 'css/vendor.css' %}" rel="stylesheet">
+	<link href="{% static 'css/main.css' %}" rel="stylesheet">
 
     <!-- script
     ================================================== -->
     <script type="text/javascript" src="{% static 'js/modernizr.js' %}"></script>
-    <script type="text/javascript" src="{% static 'js/fontawesome/all.min.js' %}"></script>
+    <script type="text/javascript" defer src="{% static 'js/fontawesome/all.min.js' %}"></script>
 
     <!-- favicons
     ================================================== -->
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
 
 </head>
 
