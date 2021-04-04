@@ -2645,7 +2645,7 @@ html.no-csstransitions .intro-content__bottom {
 .link-list a:hover,
 .link-list a:focus,
 .link-list a:active {
-  color: #8dc63f;
+  color: #000000;
 }
 
 /* tab contact bottom
@@ -2663,7 +2663,7 @@ html.no-csstransitions .intro-content__bottom {
 
 .contact-email:hover,
 .contact-email:focus {
-  color: #8dc63f;
+  color: #000;
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 }
 
