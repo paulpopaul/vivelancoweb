@@ -38,6 +38,8 @@ ALLOWED_HOSTS = [u'127.0.0.1',u'vivelanco.cl', u'www.vivelanco.cl', u'13.58.97.1
 # Application definition
 
 INSTALLED_APPS = [
+    'admin_interface',
+    'colorfield',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -45,6 +47,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 ]
+
+X_FRAME_OPTIONS='SAMEORIGIN' # only if django version >= 3.0
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -54,10 +58,10 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
+    #'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+#STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 ROOT_URLCONF = 'vivelancoweb.urls'
 
