@@ -20,11 +20,14 @@ from django.conf import settings
 
 from django.conf.urls import include
 
+from django.views.generic import TemplateView
+
 from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
+    path('inicio/', TemplateView.as_view(template_name="home_base/home_base.html")),
 
 ] 
 

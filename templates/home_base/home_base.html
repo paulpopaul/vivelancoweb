@@ -1,0 +1,3774 @@
+<!doctype html>
+<html class="no-js" lang="en">
+{% load static %}
+
+    <head>
+        <!-- meta data -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+        <!--font-family-->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+        
+        <!-- title of site -->
+        <title>Vive Lanco</title>
+
+        <!-- For favicon png -->
+
+        <!--font-awesome.min.css-->
+        <link rel="stylesheet" href="{% static 'assets/css/font-awesome.min.css' %}">
+
+        <!--linear icon css-->
+		<link rel="stylesheet" href="{% static 'assets/css/linearicons.css' %}">
+
+		<!--animate.css-->
+        <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+
+		<!--flaticon.css-->
+        <link rel="stylesheet" href="{% static 'assets/css/flaticon.css' %}">
+
+		<!--slick.css-->
+        <link rel="stylesheet" href="{% static 'assets/css/slick.css' %}">
+		<link rel="stylesheet" href="{% static 'assets/css/slick-theme.css' %}">
+		
+        <!--bootstrap.min.css-->
+        <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+		  <link href="{% static 'css/base.css' %}" rel="stylesheet">
+
+		<!-- bootsnav -->
+		<link rel="stylesheet" href="{% static 'assets/css/bootsnav.css' %}" >	
+        
+        <!--style.css-->
+        <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+
+        <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.css' %}">
+
+
+
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		
+        <!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+	
+	<body>
+		<!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+		
+		<!--header-top start -->
+	
+
+		<!-- top-area Start -->
+		<section class="top-area">
+			<div class="header-area">
+				<!-- Start Navigation -->
+			    <nav class="navbar navbar-default bootsnav  navbar-sticky navbar-scrollspy"  data-minus-value-desktop="70" data-minus-value-mobile="55" data-speed="1000">
+
+			        <div class="container">
+
+			            <!-- Start Header Navigation -->
+			            <div class="navbar-header">
+			                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+			                    <i class="fa fa-bars"></i>
+			                </button>
+			                <style>
+			                	.logo-lanco{
+			                		    padding: 20px 0;
+			                		    width: 120px;
+			                	}
+			                </style>
+			               <img class="logo-lanco" alt="Homepage" src={% static 'images/vivelanco-logo.svg' %}>
+			           
+
+			            </div><!--/.navbar-header-->
+			            <!-- End Header Navigation -->
+
+			            <!-- Collect the nav links, forms, and other content for toggling -->
+			            <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+			                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+			                    <li class=" scroll active"><a href="#home">Inicio</a></li>
+			                    <!--<li class="scroll"><a href="#works">how it works</a></li>
+			                    <li class="scroll"><a href="#explore">explore</a></li>
+			                    <li class="scroll"><a href="#reviews">review</a></li>
+			                    <li class="scroll"><a href="#blog">blog</a></li>
+			                    <li class="scroll"><a href="#contact">contact</a></li>-->
+			                </ul><!--/.nav -->
+			            </div><!-- /.navbar-collapse -->
+			        </div><!--/.container-->
+			    </nav><!--/nav-->
+			    <!-- End Navigation -->
+			</div><!--/.header-area-->
+		    <div class="clearfix"></div>
+
+		</section><!-- /.top-area-->
+		<!-- top-area End -->
+
+		<!--welcome-hero start -->
+		<section id="home" class="welcome-hero">
+			<div class="container">
+				<div class="welcome-hero-txt">
+					<style>
+
+					.welcome-hero-txt h2 {
+					font-family: "DM Serif Display", serif;
+					font-size: 5.8rem;
+					color: #fff;
+					font-weight: 800;
+					letter-spacing: 2px;
+					line-height: 1.2;
+					text-transform: none;
+					font-variant-ligatures: common-ligatures;
+    text-rendering: optimizeLegibility;
+					}
+					.welcome-hero-txt p {
+					font-size: 18px;
+					color: #fcfcfc;
+					margin-top: 25px;
+					}
+						}
+					</style>
+					<h2> Bienvenidos a ViveLanco</h2>
+					<p>El mejor lugar para encontrar y explorar  todo lo que necesitas</p>
+
+				</div>
+				<div class="welcome-hero-serch-box">
+					<div class="welcome-hero-form">
+						<div class="single-welcome-hero-form">
+							<h4>Qué estás buscando?</h4>
+							<form action="index.html">
+								<input type="text" placeholder="Ej: Lugar, Restaurant, Automobiles" />
+							</form>
+							<div class="welcome-hero-form-icon">
+								<i class="flaticon-list-with-dots"></i>
+							</div>
+						</div>
+						<div class="single-welcome-hero-form">
+							<h4>Localidad</h4>
+							<form action="index.html">
+								<input type="text" placeholder="Ej: Lanco, Malalhue" />
+							</form>
+							<div class="welcome-hero-form-icon">
+								<i class="flaticon-gps-fixed-indicator"></i>
+							</div>
+						</div>
+					</div>
+					<div class="welcome-hero-serch">
+						<button class="welcome-hero-btn" onclick="window.location.href='#'">
+							 Buscar  <i data-feather="search"></i> 
+						</button>
+					</div>
+				</div>
+			</div>
+
+		</section><!--/.welcome-hero-->
+		<!--welcome-hero end -->
+
+		<!--list-topics start -->
+		<section id="list-topics" class="list-topics">
+			<div class="container">
+				<div class="list-topics-content">
+					<ul>
+						<li>
+							<div class="single-list-topics-content">
+								<div class="single-list-topics-icon">
+									<i class="">
+										<img width="32px" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE4LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDQ4OS43NzMgNDg5Ljc3MyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDg5Ljc3MyA0ODkuNzczOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8ZyBpZD0iWE1MSURfOTVfIj4NCgk8cGF0aCBpZD0iWE1MSURfOThfIiBkPSJNMTU1LjE4MywzMDUuNjQ2Yy0yLjA4MSwwLjE3NS00LjE1NywwLjI2NS02LjIzOCwwLjI2NWMtNS42OTMsMC0xMS4yMy0wLjgyNi0xNi42NTItMi4wODFMNi44MzQsNDI5LjI5Mw0KCQljLTYuMTU4LDYuMTQ5LTYuMTU4LDE2LjEzNywwLDIyLjI4N2wzMi40NywzMi40NzhjNi4xNTgsNi4xNSwxNi4xMzUsNi4xNSwyMi4yNzYsMGwxNTAuNzg1LTE1MC43NTdsLTI3Ljk0NC0zMC4xNUwxNTUuMTgzLDMwNS42NDYNCgkJeiIvPg0KCTxwYXRoIGlkPSJYTUxJRF85N18iIGQ9Ik00ODUuMzQ1LDEwNC42NDljLTUuODg4LTUuODg1LTE1LjQxNy01Ljg4NS0yMS4zMDQsMGwtODEuMzAzLDgxLjMwMWMtNy42OTMsNy42ODUtMjAuMTU0LDcuNjg1LTI3Ljg0NywwDQoJCWMtNy42NTktNy42NzktNy42NTktMjAuMTMsMC0yNy44MDdsODAuOTAxLTgwLjg4NGM2LjExMi02LjExOCw2LjExMi0xNi4wMzYsMC0yMi4xNjhjLTYuMTQxLTYuMTEtMTYuMDU1LTYuMTEtMjIuMTY3LDANCgkJbC04MC44NjgsODAuODc2Yy03LjY5Myw3LjY5My0yMC4xNCw3LjY5My0yNy44MzMsMGMtNy42NzctNy42NzYtNy42NzctMjAuMTM2LDAtMjcuODA2bDgxLjI4Ni04MS4yOTMNCgkJYzUuOTA0LTUuODk0LDUuOTA0LTE1LjQ0MSwwLTIxLjM0M2MtNS44ODgtNS44OTUtMTUuNDM0LTUuODk1LTIxLjMzOCwwbC05MS40NTgsOTEuNDYzDQoJCWMtMjEuOTg5LDIyLjAwMy0yOC45MzUsNTIuODg4LTIxLjgxNiw4MC45OTFsNjEuMzEsNjEuMzE0YzI4LjEwMSw3LjA5Myw1OS4wMDEsMC4xNDQsODAuOTY1LTIxLjg0MWw5MS40NzEtOTEuNDU4DQoJCUM0OTEuMjQ5LDEyMC4xLDQ5MS4yNDksMTEwLjU0Myw0ODUuMzQ1LDEwNC42NDl6Ii8+DQoJPHBhdGggaWQ9IlhNTElEXzk2XyIgZD0iTTQxLjA5MywxMy43OTFjLTMuMTM0LTMuMTM1LTcuMzcyLTQuODU0LTExLjcyNC00Ljg1NGMtMC45MjYsMC0xLjg1NywwLjA3OS0yLjc2NiwwLjIzMQ0KCQljLTUuMjk1LDAuODk2LTkuODM4LDQuMjk1LTEyLjE3Miw5LjEzM2MtMjYuNzksNTUuMzczLTE1LjU5NCwxMjEuNjMxLDI3Ljg5NCwxNjUuMTIxbDc3LjgwMSw3Ny43OTENCgkJYzcuNjc2LDcuNjg1LDE4LjA1NSwxMS45MzksMjguODE5LDExLjkzOWMxLjE1MSwwLDIuMzA1LTAuMDQ4LDMuNDU2LTAuMTQzbDQ1LjE3MS0zLjg1NWwxOTYuOTcxLDIxMi40ODkNCgkJYzMuMDU4LDMuMzAzLDcuMzQyLDUuMjIxLDExLjg1NSw1LjMxYzAuMDkzLDAsMC4xOSwwLDAuMjg4LDBjNC40MTIsMCw4LjYzNi0xLjc0MywxMS43NzEtNC44NTVsMzMuNzM0LTMzLjc0MQ0KCQljMy4xMTctMy4xMSw0Ljg1OS03LjMzMSw0Ljg1OS0xMS43M2MwLTQuMzk4LTEuNzQyLTguNjIyLTQuODQ2LTExLjczMkw0MS4wOTMsMTMuNzkxeiIvPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo=" />	
+									</i>
+								</div>
+								<h2><a href="#">Alimentación</a></h2>
+								<p>150 listados</p>
+							</div>
+						</li>
+						<li>
+							<div class="single-list-topics-content">
+								<div class="single-list-topics-icon">
+									<i class="">
+										<img width="32px" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNDkwLjcgNDkwLjciIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQ5MC43IDQ5MC43OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8Zz4NCgk8Zz4NCgkJPHBhdGggZD0iTTQzNi4yLDE1NC42SDE4Mi40Yy0xMi40LDAtMzMuMSw0LjctMzMuMSwzNi42VjI0MGgzMjB2LTQ4LjhDNDY5LjMsMTU5LjQsNDQ4LjYsMTU0LjYsNDM2LjIsMTU0LjZ6Ii8+DQoJPC9nPg0KPC9nPg0KPGc+DQoJPGc+DQoJCTxwb2x5Z29uIHBvaW50cz0iODAuMywyNTAuNiAzMiwyNTAuNiAzMiw4MCAwLDgwIDAsNDEwLjcgMzIsNDEwLjcgMzIsMzI1LjMgNDU4LjcsMzI1LjMgNDU4LjcsNDEwLjYgNDkwLjcsNDEwLjYgNDkwLjcsMjUwLjYgCQkNCgkJCSIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KCTxnPg0KCQk8Y2lyY2xlIGN4PSI4NS4zIiBjeT0iMTk3LjMiIHI9IjQ0LjciLz4NCgk8L2c+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg==" />
+									</i>
+								</div>
+								<h2><a href="#">Alojamiento</a></h2>
+								<p>214 listados</p>
+							</div>
+						</li>
+						<li>
+							<div class="single-list-topics-content">
+								<div class="single-list-topics-icon">
+									<i class="">
+										<img width="32px" src="data:image/svg+xml;base64,PHN2ZyBpZD0iU29saWQiIGhlaWdodD0iNTEyIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgd2lkdGg9IjUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSI0MDAiIGN5PSIxMjgiIHI9IjQ4Ii8+PHBhdGggZD0ibTM2MCA0NjRoMTZ2MTZoLTE2eiIvPjxwYXRoIGQ9Im0xNjggNDY0aDE2djE2aC0xNnoiLz48cGF0aCBkPSJtMTY4IDM1MmgyMDh2MzJoLTIwOHoiLz48cGF0aCBkPSJtMTUyIDQ0MHY4aDI0MHYtOGE4LjAwOSA4LjAwOSAwIDAgMCAtOC04aC0yMjRhOC4wMDkgOC4wMDkgMCAwIDAgLTggOHoiLz48cGF0aCBkPSJtNTYgMjg4aDYzLjUyOWMtMi41MjktNDMuMy0xNC41NTctNjguMTY0LTE0LjY5My02OC40MzlhOC4wMTMgOC4wMTMgMCAwIDEgNC42MzQtMTEuMTVsMjQtOGE3Ljk5NCA3Ljk5NCAwIDAgMSA5LjY4NSA0LjAxMWwxNi44NDUgMzMuNjg5IDE2Ljg0NS0zMy42ODlhOCA4IDAgMCAxIDkuNjg1LTQuMDExbDI0IDhhOCA4IDAgMCAxIDQuNjI1IDExLjE2N2MtLjEyOC4yNi0xMi4xNTUgMjUuMTE5LTE0LjY4NCA2OC40MjJoNjMuNTI5YTQwIDQwIDAgMCAwIDcuNTYyLTc5LjI3NiA4IDggMCAwIDEgLTUuMzM2LTEyLjAwOCA0MCA0MCAwIDAgMCAtNTAuNTY4LTU3LjIyMyA4IDggMCAwIDEgLTEwLjc1Ni00LjQ2OSA0OC4wMDYgNDguMDA2IDAgMCAwIC04OS44IDAgOCA4IDAgMCAxIC0xMC43NTYgNC40NjkgNDAuMDA2IDQwLjAwNiAwIDAgMCAtNTAuNTY4IDU3LjIyMyA4IDggMCAwIDEgLTUuMzM2IDEyLjAwOCA0MCA0MCAwIDAgMCA3LjU1OCA3OS4yNzZ6Ii8+PHBhdGggZD0ibTQwMCA1NmE4IDggMCAwIDEgLTgtOHYtOGE4IDggMCAwIDEgMTYgMHY4YTggOCAwIDAgMSAtOCA4eiIvPjxwYXRoIGQ9Im00MDAgMjI0YTggOCAwIDAgMSAtOC04di04YTggOCAwIDAgMSAxNiAwdjhhOCA4IDAgMCAxIC04IDh6Ii8+PHBhdGggZD0ibTQ4OCAxMzZoLThhOCA4IDAgMCAxIDAtMTZoOGE4IDggMCAwIDEgMCAxNnoiLz48cGF0aCBkPSJtMzIwIDEzNmgtOGE4IDggMCAwIDEgMC0xNmg4YTggOCAwIDAgMSAwIDE2eiIvPjxwYXRoIGQ9Im00NjcuODgyIDIwMy44ODJhNy45NzQgNy45NzQgMCAwIDEgLTUuNjU3LTIuMzQzbC01LjY1Ny01LjY1N2E4IDggMCAwIDEgMTEuMzE1LTExLjMxM2w1LjY1NiA1LjY1N2E4IDggMCAwIDEgLTUuNjU3IDEzLjY1NnoiLz48cGF0aCBkPSJtMzM3Ljc3NCA3My43NzRhNy45NzggNy45NzggMCAwIDEgLTUuNjU3LTIuMzQzbC01LjY1Ni01LjY1N2E4IDggMCAxIDEgMTEuMzE0LTExLjMxM2w1LjY1NyA1LjY1N2E4IDggMCAwIDEgLTUuNjU4IDEzLjY1NnoiLz48cGF0aCBkPSJtNDYyLjIyNiA3My43NzRhOCA4IDAgMCAxIC01LjY1OC0xMy42NTZsNS42NTctNS42NTdhOCA4IDAgMSAxIDExLjMxNCAxMS4zMTNsLTUuNjU2IDUuNjU3YTcuOTc4IDcuOTc4IDAgMCAxIC01LjY1NyAyLjM0M3oiLz48cGF0aCBkPSJtMzMyLjExOCAyMDMuODgyYTggOCAwIDAgMSAtNS42NTctMTMuNjU2bDUuNjU2LTUuNjU3YTggOCAwIDEgMSAxMS4zMTUgMTEuMzEzbC01LjY1NyA1LjY1N2E3Ljk3NCA3Ljk3NCAwIDAgMSAtNS42NTcgMi4zNDN6Ii8+PHBhdGggZD0ibTE2MCA0MDBhOCA4IDAgMCAxIC04LTh2LTQ4YTggOCAwIDAgMSA4LThoMjUuNTQxYy0xLjAzLTEwLjc0Ni0xLjU0MS0yMS4yOTItMS41NDEtMzIgMC00MS4xODMgOC4zNjYtNjkuOCAxMy4zMTQtODMuMTI5bC05LjI2MS0zLjA4Ny0yMC45IDQxLjc5NGE4IDggMCAwIDEgLTE0LjMxIDBsLTIwLjktNDEuNzk0LTkuMjYxIDMuMDg3YzQuOTUyIDEzLjMyOSAxMy4zMTggNDEuOTQ2IDEzLjMxOCA4My4xMjkgMCA1Ny43LTE0Ljg1MyAxMDQuNjE3LTI5LjIxNyAxNDkuOTkzLTIuODIxIDguOTEzLTUuNTMgMTcuNDcxLTguMSAyNi4wMDdoNTMuMzE3di0xNmgtOGE4IDggMCAwIDEgLTgtOHYtMTZhMjQuMDI4IDI0LjAyOCAwIDAgMSAyNC0yNGgyMTZ2LTE2eiIvPjxwYXRoIGQ9Im0yMDAgNDY0aDE0NHYxNmgtMTQ0eiIvPjwvc3ZnPg==" />
+									</i>
+								</div>
+								<h2><a href="#">Parques</a></h2>
+								<p>185 listados</p>
+							</div>
+						</li>
+						<li>
+							<div class="single-list-topics-content">
+								<div class="single-list-topics-icon">
+									<i class="">
+										<img width="32px"src="data:image/svg+xml;base64,PHN2ZyBpZD0iQ2FwYV8xIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHdpZHRoPSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGc+PHBhdGggZD0ibTQ4MiAwaC0yMTBjLTE2LjU2OSAwLTMwIDEzLjQzMS0zMCAzMHYxMzMuNjdsMTA2LjMzMSAxMDYuMzNoMTMzLjY2OWMxNi41NjkgMCAzMC0xMy40MzEgMzAtMzB2LTIxMGMwLTE2LjU2OS0xMy40MzEtMzAtMzAtMzB6bS0xNjIuOTMyIDkyLjA2OGMtOC4yODQgMC0xNS02LjcxNi0xNS0xNXM2LjcxNi0xNSAxNS0xNSAxNSA2LjcxNiAxNSAxNS02LjcxNiAxNS0xNSAxNXptNTcuOTMyIDU3LjkzMmMtOC4yODQgMC0xNS02LjcxNi0xNS0xNXM2LjcxNi0xNSAxNS0xNSAxNSA2LjcxNiAxNSAxNS02LjcxNiAxNS0xNSAxNXptNTcuOTI2IDU3LjkyNmMtOC4yODQgMC0xNS02LjcxNi0xNS0xNXM2LjcxNi0xNSAxNS0xNSAxNSA2LjcxNiAxNSAxNS02LjcxNiAxNS0xNSAxNXoiLz48cGF0aCBkPSJtMzQ4LjE5OCAzMTIuMjk0LTE0OC40OTItMTQ4LjQ5MmMtMTEuNzE2LTExLjcxNi0zMC43MTEtMTEuNzE2LTQyLjQyNiAwbC0xNDguNDkzIDE0OC40OTJjLTExLjcxNiAxMS43MTYtMTEuNzE2IDMwLjcxMSAwIDQyLjQyNmwxNDguNDkyIDE0OC40OTJjMTEuNzE2IDExLjcxNiAzMC43MTEgMTEuNzE2IDQyLjQyNiAwbDE0OC40OTItMTQ4LjQ5MmMxMS43MTctMTEuNzE1IDExLjcxNy0zMC43MS4wMDEtNDIuNDI2em0tMjMzLjM0NSA0Mi40MjdjLTUuODU4IDUuODU4LTE1LjM1NSA1Ljg1OC0yMS4yMTMgMHMtNS44NTgtMTUuMzU1IDAtMjEuMjEzIDE1LjM1NS01Ljg1OCAyMS4yMTMgMGM1Ljg1OCA1Ljg1NyA1Ljg1OCAxNS4zNTUgMCAyMS4yMTN6bTIxLjIxMy00Mi40MjdjLTUuODU4LTUuODU4LTUuODU4LTE1LjM1NSAwLTIxLjIxM3MxNS4zNTUtNS44NTggMjEuMjEzIDAgNS44NTggMTUuMzU1IDAgMjEuMjEzLTE1LjM1NSA1Ljg1OC0yMS4yMTMgMHptNDIuNDI2IDEwNi4wNjZjLTUuODU4IDUuODU4LTE1LjM1NSA1Ljg1OC0yMS4yMTMgMHMtNS44NTgtMTUuMzU1IDAtMjEuMjEzIDE1LjM1NS01Ljg1OCAyMS4yMTMgMCA1Ljg1OCAxNS4zNTYgMCAyMS4yMTN6bTAtMTQ4LjQ5MmMtNS44NTgtNS44NTgtNS44NTgtMTUuMzU1IDAtMjEuMjEzczE1LjM1NS01Ljg1OCAyMS4yMTMgMCA1Ljg1OCAxNS4zNTUgMCAyMS4yMTNjLTUuODU3IDUuODU4LTE1LjM1NSA1Ljg1OC0yMS4yMTMgMHptNDIuNDI3IDEwNi4wNjZjLTUuODU4IDUuODU4LTE1LjM1NSA1Ljg1OC0yMS4yMTMgMHMtNS44NTgtMTUuMzU1IDAtMjEuMjEzIDE1LjM1NS01Ljg1OCAyMS4yMTMgMCA1Ljg1OCAxNS4zNTUgMCAyMS4yMTN6bTQyLjQyNi00Mi40MjZjLTUuODU4IDUuODU4LTE1LjM1NSA1Ljg1OC0yMS4yMTMgMHMtNS44NTgtMTUuMzU1IDAtMjEuMjEzIDE1LjM1NS01Ljg1OCAyMS4yMTMgMGM1Ljg1OCA1Ljg1NyA1Ljg1OCAxNS4zNTUgMCAyMS4yMTN6Ii8+PC9nPjwvc3ZnPg==" />
+									</i>
+								</div>
+								<h2><a href="#">Entretenimiento</a></h2>
+								<p>200 listados</p>
+							</div>
+						</li>
+						<li>
+							<div class="single-list-topics-content">
+								<div class="single-list-topics-icon">
+									<i class="">
+<img width="32px" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgMzg4LjggMzg4LjgiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDM4OC44IDM4OC44OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8Zz4NCgk8Zz4NCgkJPHBhdGggZD0iTTIyMS44NCwyMDkuOTM5Yy00LjQxOCwwLTgtMy41ODItOC04di0zNi41NmgtMzguODh2MzYuNTZjMCw0LjQxOC0zLjU4Miw4LTgsOEgxMzAuNHYzOC44aDM2LjU2YzQuNDE4LDAsOCwzLjU4Miw4LDgNCgkJCXYzNi41NmgzOC44di0zNi41NmMwLTQuNDE4LDMuNTgyLTgsOC04aDM2LjY0di0zOC44SDIyMS44NHoiLz4NCgk8L2c+DQo8L2c+DQo8Zz4NCgk8Zz4NCgkJPHBhdGggZD0iTTMzMy42LDg5LjQ1OUg1NS4yYy0yNS40NCwwLTU1LjIsMTQuNDgtNTUuMiw1NS4ydjE3My44NGMwLDQwLjcyLDI5Ljc2LDU1LjIsNTUuMiw1NS4yaDI3OC40DQoJCQljMjUuNDQsMCw1NS4yLTE0LjQ4LDU1LjItNTUuMnYtMTczLjg0QzM4OC44LDEwMy45MzksMzU5LjEyLDg5LjQ1OSwzMzMuNiw4OS40NTl6IE0yNzQuNCwyNTIuODE5DQoJCQljMCw2LjU4My01LjMzNywxMS45Mi0xMS45MiwxMS45MmgtMzIuNjR2MzIuNjRjMCw2LjU4My01LjMzNywxMS45Mi0xMS45MiwxMS45MmgtNDcuMDRjLTYuNTgzLDAtMTEuOTItNS4zMzctMTEuOTItMTEuOTJ2LTMyLjY0DQoJCQlIMTI2LjRjLTYuNTgzLDAuMDQ0LTExLjk1Ni01LjI1Ny0xMi0xMS44NGMwLTAuMDI3LDAtMC4wNTQsMC0wLjA4di00Ni45NmMwLTYuNTgzLDUuMzM3LTExLjkyLDExLjkyLTExLjkyaDMyLjY0di0zMi42NA0KCQkJYzAtNi41ODMsNS4zMzctMTEuOTIsMTEuOTItMTEuOTJoNDYuOTZjNi41ODMsMCwxMS45Miw1LjMzNywxMS45MiwxMS45MnYzMi42NGgzMi42NGM2LjU4My0wLjA0NCwxMS45NTYsNS4yNTcsMTIsMTEuODQNCgkJCWMwLDAuMDI3LDAsMC4wNTMsMCwwLjA4VjI1Mi44MTl6Ii8+DQoJPC9nPg0KPC9nPg0KPGc+DQoJPGc+DQoJCTxwYXRoIGQ9Ik0yNDUuODM1LDE1LjEzOWMtMC44NzctMC4wNS0xLjc1Ny0wLjA1LTIuNjM1LDBoLTk3LjZjLTEyLjgzNy0wLjcyNy0yMy44MzMsOS4wODktMjQuNTYsMjEuOTI1DQoJCQljLTAuMDUsMC44NzgtMC4wNSwxLjc1NywwLDIuNjM1djM2aDE2bDAuMDgtMzZjMC0yLjMyLDAtOC41Niw4LjU2LTguNTZoOTcuNTJjOC41NiwwLDguNTYsNi4xNiw4LjU2LDguNTZ2MzZoMTZ2LTM2DQoJCQlDMjY4LjQ4OCwyNi44NjIsMjU4LjY3MSwxNS44NjcsMjQ1LjgzNSwxNS4xMzl6Ii8+DQoJPC9nPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo=" />
+									</i>
+								</div>
+								<h2><a href="#">Salud</a></h2>
+								<p>120 listados</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div><!--/.container-->
+
+		</section><!--/.list-topics-->
+		<!--list-topics end-->
+
+<style>
+	.thumb-post img {
+width: 100px;
+height:300px;
+
+  width: 100%;
+  max-height: 250px;
+}
+.icon-point{
+
+    font-size: 15px;
+    padding: 0 4px 0 0;
+
+}
+
+.icon-point2{
+
+    font-size: 16px;
+    padding: 0 0 0 4px;
+
+}
+
+.separate-padding{
+	padding-top: 25px;
+}
+</style>
+
+		<!--explore start -->
+		<section id="explore" class="explore">
+			<div class="container">
+				<div class="section-header  ">
+													<div class="single-list-topics-icon">
+									<i class="">
+										<img width="32px" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE4LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDQ4OS43NzMgNDg5Ljc3MyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDg5Ljc3MyA0ODkuNzczOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8ZyBpZD0iWE1MSURfOTVfIj4NCgk8cGF0aCBpZD0iWE1MSURfOThfIiBkPSJNMTU1LjE4MywzMDUuNjQ2Yy0yLjA4MSwwLjE3NS00LjE1NywwLjI2NS02LjIzOCwwLjI2NWMtNS42OTMsMC0xMS4yMy0wLjgyNi0xNi42NTItMi4wODFMNi44MzQsNDI5LjI5Mw0KCQljLTYuMTU4LDYuMTQ5LTYuMTU4LDE2LjEzNywwLDIyLjI4N2wzMi40NywzMi40NzhjNi4xNTgsNi4xNSwxNi4xMzUsNi4xNSwyMi4yNzYsMGwxNTAuNzg1LTE1MC43NTdsLTI3Ljk0NC0zMC4xNUwxNTUuMTgzLDMwNS42NDYNCgkJeiIvPg0KCTxwYXRoIGlkPSJYTUxJRF85N18iIGQ9Ik00ODUuMzQ1LDEwNC42NDljLTUuODg4LTUuODg1LTE1LjQxNy01Ljg4NS0yMS4zMDQsMGwtODEuMzAzLDgxLjMwMWMtNy42OTMsNy42ODUtMjAuMTU0LDcuNjg1LTI3Ljg0NywwDQoJCWMtNy42NTktNy42NzktNy42NTktMjAuMTMsMC0yNy44MDdsODAuOTAxLTgwLjg4NGM2LjExMi02LjExOCw2LjExMi0xNi4wMzYsMC0yMi4xNjhjLTYuMTQxLTYuMTEtMTYuMDU1LTYuMTEtMjIuMTY3LDANCgkJbC04MC44NjgsODAuODc2Yy03LjY5Myw3LjY5My0yMC4xNCw3LjY5My0yNy44MzMsMGMtNy42NzctNy42NzYtNy42NzctMjAuMTM2LDAtMjcuODA2bDgxLjI4Ni04MS4yOTMNCgkJYzUuOTA0LTUuODk0LDUuOTA0LTE1LjQ0MSwwLTIxLjM0M2MtNS44ODgtNS44OTUtMTUuNDM0LTUuODk1LTIxLjMzOCwwbC05MS40NTgsOTEuNDYzDQoJCWMtMjEuOTg5LDIyLjAwMy0yOC45MzUsNTIuODg4LTIxLjgxNiw4MC45OTFsNjEuMzEsNjEuMzE0YzI4LjEwMSw3LjA5Myw1OS4wMDEsMC4xNDQsODAuOTY1LTIxLjg0MWw5MS40NzEtOTEuNDU4DQoJCUM0OTEuMjQ5LDEyMC4xLDQ5MS4yNDksMTEwLjU0Myw0ODUuMzQ1LDEwNC42NDl6Ii8+DQoJPHBhdGggaWQ9IlhNTElEXzk2XyIgZD0iTTQxLjA5MywxMy43OTFjLTMuMTM0LTMuMTM1LTcuMzcyLTQuODU0LTExLjcyNC00Ljg1NGMtMC45MjYsMC0xLjg1NywwLjA3OS0yLjc2NiwwLjIzMQ0KCQljLTUuMjk1LDAuODk2LTkuODM4LDQuMjk1LTEyLjE3Miw5LjEzM2MtMjYuNzksNTUuMzczLTE1LjU5NCwxMjEuNjMxLDI3Ljg5NCwxNjUuMTIxbDc3LjgwMSw3Ny43OTENCgkJYzcuNjc2LDcuNjg1LDE4LjA1NSwxMS45MzksMjguODE5LDExLjkzOWMxLjE1MSwwLDIuMzA1LTAuMDQ4LDMuNDU2LTAuMTQzbDQ1LjE3MS0zLjg1NWwxOTYuOTcxLDIxMi40ODkNCgkJYzMuMDU4LDMuMzAzLDcuMzQyLDUuMjIxLDExLjg1NSw1LjMxYzAuMDkzLDAsMC4xOSwwLDAuMjg4LDBjNC40MTIsMCw4LjYzNi0xLjc0MywxMS43NzEtNC44NTVsMzMuNzM0LTMzLjc0MQ0KCQljMy4xMTctMy4xMSw0Ljg1OS03LjMzMSw0Ljg1OS0xMS43M2MwLTQuMzk4LTEuNzQyLTguNjIyLTQuODQ2LTExLjczMkw0MS4wOTMsMTMuNzkxeiIvPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo=" />	
+									</i>
+								</div>
+					<h2>Alimentación</h2>
+					<p>Descubre nuestra identidad culinaria</p>
+				</div><!--/.section-header-->
+				<div class="explore-content ">
+
+					<div class="row  owl-theme instaapp  owl-carousel">
+
+						<div class=" ">
+							<div class="single-explore-item ">
+								<div class="single-explore-img thumb-post">
+									<img src="http://www.walobuby.com/recipeimg/trescoldobig.jpg" alt="explore image">
+									<div class="single-explore-img-info">
+										<button onclick="window.location.href='#'">Mejor Lugar</button>
+										<div class="single-explore-image-icon-box">
+											<ul>
+												<li>
+													<div class="single-explore-image-icon">
+														<i class="fa fa-arrows-alt"></i>
+													</div>
+												</li>
+												<li>
+													<div class="single-explore-image-icon">
+														<i class="fa fa-bookmark-o"></i>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="single-explore-txt bg-theme-5">
+									<h2><a href="#">Los Hornitos de Lanco</a>
+										<a style="color:#00c61c;" href="#"><i class="fa fa-check-circle" aria-hidden="true"></i></a>
+									</h2>
+									<p style="padding-top: 4px;">
+									<a href="#"><i class="fa icon-point fa-map-marker" aria-hidden="true"></i></a> Ruta 203, Lanco, Los Ríos
+								</p>
+									<p class="explore-rating-price">
+										<span class="explore-rating">5.0</span>
+										<a href="#">Lugar 10</a> 
+										<span class="explore-price-box">
+											desde
+											<span class="explore-price">$1000-$3000</span>
+										</span>
+									</p>
+									<div class="explore-person">
+										<div class="row">
+											<div class="col-sm-2">
+												<div class="explore-person-img">
+													<a href="#">
+														<img src="https://ucoguia.com/wp-content/uploads/2019/08/el-horno-de-barrio-ucoguia.jpg"  alt="explore person">
+													</a>
+												</div>
+											</div>
+											<div class="col-sm-10">
+												<p>
+													Tortillas de rescoldo, preparación tradicional del campo chileno que se remonta a más de 100 años.
+												</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="explore-open-close-part">
+										<div class="row">
+											<div class="col-sm-5">
+												<button class="close-btn" onclick="window.location.href='#'">cerrado ahora</button>
+											</div>
+											<div class="col-sm-7">
+												<div class="explore-map-icon">
+													<a href="#"><i class="icon-point2 fa fa-share-alt" aria-hidden="true"></i></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="">
+							<div class="single-explore-item">
+								<div class="single-explore-img thumb-post">
+									<img class="thumb-post" src="https://www.cascada.travel/hs-fs/hubfs/30863060116_a356777b37_z.jpg?width=640&name=30863060116_a356777b37_z.jpg" alt="explore image">
+									<div class="single-explore-img-info">
+										<button onclick="window.location.href='#'">Mejor Lugar</button>
+										<div class="single-explore-image-icon-box">
+											<ul>
+												<li>
+													<div class="single-explore-image-icon">
+														<i class="fa fa-arrows-alt"></i>
+													</div>
+												</li>
+												<li>
+													<div class="single-explore-image-icon">
+														<i class="fa fa-bookmark-o"></i>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="single-explore-txt bg-theme-5">
+									<h2><a href="#">Comida Mapuche</a>
+										<a style="color:#00c61c;" href="#"><i class="fa fa-check-circle" aria-hidden="true"></i></a>
+									</h2>
+									<p style="padding-top: 4px;">
+									<a href="#"><i class="icon-point fa fa-map-marker" aria-hidden="true"></i></a> Nuevo Norte 666, Lanco, Los Ríos
+								</p>
+									<p class="explore-rating-price">
+										<span class="explore-rating">5.0</span>
+										<a href="#">Lugar 10</a> 
+										<span class="explore-price-box">
+											desde
+											<span class="explore-price">$1000-$12000</span>
+										</span>
+									</p>
+									<div class="explore-person">
+										<div class="row">
+											<div class="col-sm-2">
+												<div class="explore-person-img">
+													<a href="#">
+														<img  src="https://ucoguia.com/wp-content/uploads/2019/08/el-horno-de-barrio-ucoguia.jpg" class="rounded-circle" alt="explore person">
+													</a>
+												</div>
+											</div>
+											<div class="col-sm-10">
+												<p>
+													Tortillas de rescoldo, preparación tradicional del campo chileno que se remonta a más de 100 años.
+												</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="explore-open-close-part">
+										<div class="row">
+											<div class="col-sm-5">
+												<button class="close-btn open-btn" onclick="window.location.href='#'">abierto ahora</button>
+											</div>
+											<div class="col-sm-7">
+												<div class="explore-map-icon">
+													<a href="#"><i class="icon-point2 fa fa-share-alt" aria-hidden="true"></i></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+												<div class="  ">
+							<div class=" single-explore-item">
+								<div class=" single-explore-img thumb-post">
+									<img src="https://blog.amigofoods.com/wp-content/uploads/2019/06/chilean-foods.png" alt="explore image">
+									<div class="single-explore-img-info">
+										<button onclick="window.location.href='#'">Mejor Lugar</button>
+										<div class="single-explore-image-icon-box">
+											<ul>
+												<li>
+													<div class="single-explore-image-icon">
+														<i class="fa fa-arrows-alt"></i>
+													</div>
+												</li>
+												<li>
+													<div class="single-explore-image-icon">
+														<i class="fa fa-bookmark-o"></i>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="single-explore-txt bg-theme-5">
+									<h2><a href="#">La Casa del Campesino</a>
+										<a style="color:#00c61c;" href="#"><i class="fa fa-check-circle" aria-hidden="true"></i></a>
+									</h2>
+									<p style="padding-top: 4px;">
+									<a href="#"><i class="icon-point fa fa-map-marker" aria-hidden="true"></i></a> Libertad 501, Lanco, Los Ríos
+								</p>
+									<p class="explore-rating-price">
+										<span class="explore-rating">5.0</span>
+										<a href="#">Lugar 10</a> 
+										<span class="explore-price-box">
+											desde
+											<span class="explore-price">$1000-$22000</span>
+										</span>
+									</p>
+									<div class="explore-person">
+										<div class="row">
+											<div class="col-sm-2">
+												<div class="explore-person-img">
+													<a href="#">
+														<img  src="https://ucoguia.com/wp-content/uploads/2019/08/el-horno-de-barrio-ucoguia.jpg" class="rounded-circle" alt="explore person">
+													</a>
+												</div>
+											</div>
+											<div class="col-sm-10">
+												<p>
+													Tortillas de rescoldo, preparación tradicional del campo chileno que se remonta a más de 100 años.
+												</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="explore-open-close-part">
+										<div class="row">
+											<div class="col-sm-5">
+												<button class="close-btn open-btn" onclick="window.location.href='#'">abierto ahora</button>
+											</div>
+											<div class="col-sm-7">
+												<div class="explore-map-icon">
+													<a href="#"><i class="icon-point2 fa fa-share-alt" aria-hidden="true"></i></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+
+						<div class=" ">
+							<div class=" single-explore-item">
+								<div class="single-explore-img thumb-post">
+									<img src="https://portal.ucm.cl//content/uploads/2020/04/Cazuela-Dia-Cocina-Chilena-.jpg" alt="explore image">
+									<div class="single-explore-img-info">
+										<button onclick="window.location.href='#'">Mejor Lugar</button>
+										<div class="single-explore-image-icon-box">
+											<ul>
+												<li>
+													<div class="single-explore-image-icon">
+														<i class="fa fa-arrows-alt"></i>
+													</div>
+												</li>
+												<li>
+													<div class="single-explore-image-icon">
+														<i class="fa fa-bookmark-o"></i>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="single-explore-txt bg-theme-5">
+									<h2><a href="#">La Casa del Campesino</a>
+										<a style="color:#00c61c;" href="#"><i class="fa fa-check-circle" aria-hidden="true"></i></a>
+									</h2>
+									<p style="padding-top: 4px;">
+									<a href="#"><i class="icon-point fa fa-map-marker" aria-hidden="true"></i></a> Libertad 501, Lanco, Los Ríos
+								</p>
+									<p class="explore-rating-price">
+										<span class="explore-rating">5.0</span>
+										<a href="#">Lugar 10</a> 
+										<span class="explore-price-box">
+											desde
+											<span class="explore-price">$1000-$22000</span>
+										</span>
+									</p>
+									<div class="explore-person">
+										<div class="row">
+											<div class="col-sm-2">
+												<div class="explore-person-img">
+													<a href="#">
+														<img  src="https://ucoguia.com/wp-content/uploads/2019/08/el-horno-de-barrio-ucoguia.jpg" class="rounded-circle" alt="explore person">
+													</a>
+												</div>
+											</div>
+											<div class="col-sm-10">
+												<p>
+													Tortillas de rescoldo, preparación tradicional del campo chileno que se remonta a más de 100 años.
+												</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="explore-open-close-part">
+										<div class="row">
+											<div class="col-sm-5">
+												<button class="close-btn" onclick="window.location.href='#'">cerrado ahora</button>
+											</div>
+											<div class="col-sm-7">
+												<div class="explore-map-icon">
+													<a href="#"><i class="icon-point2 fa fa-share-alt" aria-hidden="true"></i></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class=" ">
+					
+					<div class="row  instaapp  owl-carousel">
+
+						<div class=" ">
+							<div class="single-explore-item">
+								<div class="single-explore-img thumb-post">
+									<img src="https://www.franciscosaavedra.cl/wp-content/uploads/2021/03/completoitaliano.jpg" alt="explore image">
+									<div class="single-explore-img-info">
+										<button onclick="window.location.href='#'">Mejor Lugar</button>
+										<div class="single-explore-image-icon-box">
+											<ul>
+												<li>
+													<div class="single-explore-image-icon">
+														<i class="fa fa-arrows-alt"></i>
+													</div>
+												</li>
+												<li>
+													<div class="single-explore-image-icon">
+														<i class="fa fa-bookmark-o"></i>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="single-explore-txt bg-theme-3">
+									<h2><a href="#">La Mascada</a>
+										<a style="color:#00c61c;" href="#"><i class="fa fa-check-circle" aria-hidden="true"></i></a>
+									</h2>
+									<p style="padding-top: 4px;">
+									<a href="#"><i class="icon-point fa fa-map-marker" aria-hidden="true"></i></a> Dieciocho 88, Lanco, Los Ríos
+								</p>
+									<p class="explore-rating-price">
+										<span class="explore-rating">5.0</span>
+										<a href="#">Lugar 10</a> 
+										<span class="explore-price-box">
+											desde
+											<span class="explore-price">$1000-$3000</span>
+										</span>
+									</p>
+									<div class="explore-person">
+										<div class="row">
+											<div class="col-sm-2">
+												<div class="explore-person-img">
+													<a href="#">
+														<img  src="https://ucoguia.com/wp-content/uploads/2019/08/el-horno-de-barrio-ucoguia.jpg" class="rounded-circle" alt="explore person">
+													</a>
+												</div>
+											</div>
+											<div class="col-sm-10">
+												<p>
+													Tortillas de rescoldo, preparación tradicional del campo chileno que se remonta a más de 100 años.
+												</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="explore-open-close-part">
+										<div class="row">
+											<div class="col-sm-5">
+												<button class="close-btn" onclick="window.location.href='#'">cerrado ahora</button>
+											</div>
+											<div class="col-sm-7">
+												<div class="explore-map-icon">
+													<a href="#"><i class="icon-point2 fa fa-share-alt" aria-hidden="true"></i></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+												<div class="">
+							<div class="single-explore-item">
+								<div class="single-explore-img thumb-post">
+									<img src="https://www.mqltv.com/wp-content/uploads/2018/02/1-75.jpg" alt="explore image">
+									<div class="single-explore-img-info">
+										<button onclick="window.location.href='#'">Mejor Lugar</button>
+										<div class="single-explore-image-icon-box">
+											<ul>
+												<li>
+													<div class="single-explore-image-icon">
+														<i class="fa fa-arrows-alt"></i>
+													</div>
+												</li>
+												<li>
+													<div class="single-explore-image-icon">
+														<i class="fa fa-bookmark-o"></i>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="single-explore-txt bg-theme-3">
+									<h2><a href="#">Barra Cervecera</a>
+										<a style="color:#00c61c;" href="#"><i class="fa fa-check-circle" aria-hidden="true"></i></a>
+									</h2>
+									<p style="padding-top: 4px;">
+									<a href="#"><i class="icon-point fa fa-map-marker" aria-hidden="true"></i></a> Yungai 878, Lanco, Los Ríos
+								</p>
+									<p class="explore-rating-price">
+										<span class="explore-rating">5.0</span>
+										<a href="#">Lugar 10</a> 
+										<span class="explore-price-box">
+											desde
+											<span class="explore-price">$1000-$12000</span>
+										</span>
+									</p>
+									<div class="explore-person">
+										<div class="row">
+											<div class="col-sm-2">
+												<div class="explore-person-img">
+													<a href="#">
+														<img  src="https://ucoguia.com/wp-content/uploads/2019/08/el-horno-de-barrio-ucoguia.jpg" class="rounded-circle" alt="explore person">
+													</a>
+												</div>
+											</div>
+											<div class="col-sm-10">
+												<p>
+													Tortillas de rescoldo, preparación tradicional del campo chileno que se remonta a más de 100 años.
+												</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="explore-open-close-part">
+										<div class="row">
+											<div class="col-sm-5">
+												<button class="close-btn open-btn" onclick="window.location.href='#'">abierto ahora</button>
+											</div>
+											<div class="col-sm-7">
+												<div class="explore-map-icon">
+													<a href="#"><i class="icon-point2 fa fa-share-alt" aria-hidden="true"></i></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+												<div class="  ">
+							<div class=" single-explore-item">
+								<div class=" single-explore-img thumb-post">
+									<img src="https://as.com/deporteyvida/imagenes/2018/06/15/portada/1529051864_567397_1529052016_noticia_normal.jpg" alt="explore image">
+									<div class="single-explore-img-info">
+										<button onclick="window.location.href='#'">Mejor Lugar</button>
+										<div class="single-explore-image-icon-box">
+											<ul>
+												<li>
+													<div class="single-explore-image-icon">
+														<i class="fa fa-arrows-alt"></i>
+													</div>
+												</li>
+												<li>
+													<div class="single-explore-image-icon">
+														<i class="fa fa-bookmark-o"></i>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="single-explore-txt bg-theme-3">
+									<h2><a href="#">Sushimbombo</a>
+										<a style="color:#00c61c;" href="#"><i class="fa fa-check-circle" aria-hidden="true"></i></a>
+									</h2>
+									<p style="padding-top: 4px;">
+									<a href="#"><i class="icon-point fa fa-map-marker" aria-hidden="true"></i></a> Arauco 777, Lanco, Los Ríos
+								</p>
+									<p class="explore-rating-price">
+										<span class="explore-rating">5.0</span>
+										<a href="#">Lugar 10</a> 
+										<span class="explore-price-box">
+											desde
+											<span class="explore-price">$1000-$22000</span>
+										</span>
+									</p>
+									<div class="explore-person">
+										<div class="row">
+											<div class="col-sm-2">
+												<div class="explore-person-img">
+													<a href="#">
+														<img  src="https://ucoguia.com/wp-content/uploads/2019/08/el-horno-de-barrio-ucoguia.jpg" class="rounded-circle" alt="explore person">
+													</a>
+												</div>
+											</div>
+											<div class="col-sm-10">
+												<p>
+													Tortillas de rescoldo, preparación tradicional del campo chileno que se remonta a más de 100 años.
+												</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="explore-open-close-part">
+										<div class="row">
+											<div class="col-sm-5">
+												<button class="close-btn open-btn" onclick="window.location.href='#'">abierto ahora</button>
+											</div>
+											<div class="col-sm-7">
+												<div class="explore-map-icon">
+													<a href="#"><i class="icon-point2 fa fa-share-alt" aria-hidden="true"></i></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+
+						<div class=" ">
+							<div class=" single-explore-item">
+								<div class="single-explore-img thumb-post">
+									<img src="https://www.lomitosporky.cl/img/69.jpg" alt="explore image">
+									<div class="single-explore-img-info">
+										<button onclick="window.location.href='#'">Mejor Lugar</button>
+										<div class="single-explore-image-icon-box">
+											<ul>
+												<li>
+													<div class="single-explore-image-icon">
+														<i class="fa fa-arrows-alt"></i>
+													</div>
+												</li>
+												<li>
+													<div class="single-explore-image-icon">
+														<i class="fa fa-bookmark-o"></i>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="single-explore-txt bg-theme-3">
+									<h2><a href="#">Entre Rieles</a>
+										<a style="color:#00c61c;" href="#"><i class="fa fa-check-circle" aria-hidden="true"></i></a>
+									</h2>
+									<p style="padding-top: 4px;">
+									<a href="#"><i class="icon-point fa fa-map-marker" aria-hidden="true"></i></a> Libertad 501, Lanco, Los Ríos
+								</p>
+									<p class="explore-rating-price">
+										<span class="explore-rating">5.0</span>
+										<a href="#">Lugar 10</a> 
+										<span class="explore-price-box">
+											desde
+											<span class="explore-price">$1000-$22000</span>
+										</span>
+									</p>
+									<div class="explore-person">
+										<div class="row">
+											<div class="col-sm-2">
+												<div class="explore-person-img">
+													<a href="#">
+														<img  src="https://ucoguia.com/wp-content/uploads/2019/08/el-horno-de-barrio-ucoguia.jpg" class="rounded-circle" alt="explore person">
+													</a>
+												</div>
+											</div>
+											<div class="col-sm-10">
+												<p>
+													Tortillas de rescoldo, preparación tradicional del campo chileno que se remonta a más de 100 años.
+												</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="explore-open-close-part">
+										<div class="row">
+											<div class="col-sm-5">
+												<button class="close-btn" onclick="window.location.href='#'">cerrado ahora</button>
+											</div>
+											<div class="col-sm-7">
+												<div class="explore-map-icon">
+													<a href="#"><i class="icon-point2 fa fa-share-alt" aria-hidden="true"></i></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div><!--/.container-->
+
+			<div class="container">
+				<div class="section-header separate-padding">
+													<div class="single-list-topics-icon">
+									<i class="">
+										<img width="32px" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNDkwLjcgNDkwLjciIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQ5MC43IDQ5MC43OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8Zz4NCgk8Zz4NCgkJPHBhdGggZD0iTTQzNi4yLDE1NC42SDE4Mi40Yy0xMi40LDAtMzMuMSw0LjctMzMuMSwzNi42VjI0MGgzMjB2LTQ4LjhDNDY5LjMsMTU5LjQsNDQ4LjYsMTU0LjYsNDM2LjIsMTU0LjZ6Ii8+DQoJPC9nPg0KPC9nPg0KPGc+DQoJPGc+DQoJCTxwb2x5Z29uIHBvaW50cz0iODAuMywyNTAuNiAzMiwyNTAuNiAzMiw4MCAwLDgwIDAsNDEwLjcgMzIsNDEwLjcgMzIsMzI1LjMgNDU4LjcsMzI1LjMgNDU4LjcsNDEwLjYgNDkwLjcsNDEwLjYgNDkwLjcsMjUwLjYgCQkNCgkJCSIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KCTxnPg0KCQk8Y2lyY2xlIGN4PSI4NS4zIiBjeT0iMTk3LjMiIHI9IjQ0LjciLz4NCgk8L2c+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg==" />
+									</i>
+								</div>
+					<h2>Alojamiento</h2>
+					<p>Grandes lugares para quedarse</p>
+				</div><!--/.section-header-->
+				<div class="explore-content ">
+
+					
+					<div class="row  instaapp  owl-carousel">
+
+						<div class=" ">
+							<div class="single-explore-item">
+								<div class="single-explore-img thumb-post">
+									<img src="https://www.italianbark.com/wp-content/uploads/2018/01/hotel-room-design-trends-italianbark-interior-design-blog.jpg" alt="explore image">
+									<div class="single-explore-img-info">
+										<button onclick="window.location.href='#'">Mejor Lugar</button>
+										<div class="single-explore-image-icon-box">
+											<ul>
+												<li>
+													<div class="single-explore-image-icon">
+														<i class="fa fa-arrows-alt"></i>
+													</div>
+												</li>
+												<li>
+													<div class="single-explore-image-icon">
+														<i class="fa fa-bookmark-o"></i>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="single-explore-txt bg-theme-4">
+									<h2><a href="#">Pension Estadio</a>
+										<a style="color:#00c61c;" href="#"><i class="fa fa-check-circle" aria-hidden="true"></i></a>
+									</h2>
+									<p style="padding-top: 4px;">
+									<a href="#"><i class="icon-point fa fa-map-marker" aria-hidden="true"></i></a> Dieciocho 88, Lanco, Los Ríos
+								</p>
+									<p class="explore-rating-price">
+										<span class="explore-rating">5.0</span>
+										<a href="#">Lugar 10</a> 
+										<span class="explore-price-box">
+											desde
+											<span class="explore-price">$1000-$3000</span>
+										</span>
+									</p>
+									<div class="explore-person">
+										<div class="row">
+											<div class="col-sm-2">
+												<div class="explore-person-img">
+													<a href="#">
+														<img  src="https://ucoguia.com/wp-content/uploads/2019/08/el-horno-de-barrio-ucoguia.jpg" class="rounded-circle" alt="explore person">
+													</a>
+												</div>
+											</div>
+											<div class="col-sm-10">
+												<p>
+													Tortillas de rescoldo, preparación tradicional del campo chileno que se remonta a más de 100 años.
+												</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="explore-open-close-part">
+										<div class="row">
+											<div class="col-sm-5">
+												<button class="close-btn" onclick="window.location.href='#'">cerrado ahora</button>
+											</div>
+											<div class="col-sm-7">
+												<div class="explore-map-icon">
+													<a href="#"><i class="icon-point2 fa fa-share-alt" aria-hidden="true"></i></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+												<div class="">
+							<div class="single-explore-item">
+								<div class="single-explore-img thumb-post">
+									<img src="https://a0.muscache.com/pictures/cdfb0424-f2ee-4ffb-88ad-ceb3d57c283d.jpg" alt="explore image">
+									<div class="single-explore-img-info">
+										<button onclick="window.location.href='#'">Mejor Lugar</button>
+										<div class="single-explore-image-icon-box">
+											<ul>
+												<li>
+													<div class="single-explore-image-icon">
+														<i class="fa fa-arrows-alt"></i>
+													</div>
+												</li>
+												<li>
+													<div class="single-explore-image-icon">
+														<i class="fa fa-bookmark-o"></i>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="single-explore-txt bg-theme-4">
+									<h2><a href="#">Curitambo</a>
+										<a style="color:#00c61c;" href="#"><i class="fa fa-check-circle" aria-hidden="true"></i></a>
+									</h2>
+									<p style="padding-top: 4px;">
+									<a href="#"><i class="icon-point fa fa-map-marker" aria-hidden="true"></i></a> Yungai 878, Lanco, Los Ríos
+								</p>
+									<p class="explore-rating-price">
+										<span class="explore-rating">5.0</span>
+										<a href="#">Lugar 10</a> 
+										<span class="explore-price-box">
+											desde
+											<span class="explore-price">$1000-$12000</span>
+										</span>
+									</p>
+									<div class="explore-person">
+										<div class="row">
+											<div class="col-sm-2">
+												<div class="explore-person-img">
+													<a href="#">
+														<img  src="https://ucoguia.com/wp-content/uploads/2019/08/el-horno-de-barrio-ucoguia.jpg" class="rounded-circle" alt="explore person">
+													</a>
+												</div>
+											</div>
+											<div class="col-sm-10">
+												<p>
+													Tortillas de rescoldo, preparación tradicional del campo chileno que se remonta a más de 100 años.
+												</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="explore-open-close-part">
+										<div class="row">
+											<div class="col-sm-5">
+												<button class="close-btn open-btn" onclick="window.location.href='#'">abierto ahora</button>
+											</div>
+											<div class="col-sm-7">
+												<div class="explore-map-icon">
+													<a href="#"><i class="icon-point2 fa fa-share-alt" aria-hidden="true"></i></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+												<div class="  ">
+							<div class=" single-explore-item">
+								<div class=" single-explore-img thumb-post">
+									<img src="https://www.elmedina.cl/wp-content/uploads/2015/08/bannercabanas-1400x900.jpg" alt="explore image">
+									<div class="single-explore-img-info">
+										<button onclick="window.location.href='#'">Mejor Lugar</button>
+										<div class="single-explore-image-icon-box">
+											<ul>
+												<li>
+													<div class="single-explore-image-icon">
+														<i class="fa fa-arrows-alt"></i>
+													</div>
+												</li>
+												<li>
+													<div class="single-explore-image-icon">
+														<i class="fa fa-bookmark-o"></i>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="single-explore-txt bg-theme-4">
+									<h2><a href="#">Casa Colibrí</a>
+										<a style="color:#00c61c;" href="#"><i class="fa fa-check-circle" aria-hidden="true"></i></a>
+									</h2>
+									<p style="padding-top: 4px;">
+									<a href="#"><i class="icon-point fa fa-map-marker" aria-hidden="true"></i></a> Arauco 777, Lanco, Los Ríos
+								</p>
+									<p class="explore-rating-price">
+										<span class="explore-rating">5.0</span>
+										<a href="#">Lugar 10</a> 
+										<span class="explore-price-box">
+											desde
+											<span class="explore-price">$1000-$22000</span>
+										</span>
+									</p>
+									<div class="explore-person">
+										<div class="row">
+											<div class="col-sm-2">
+												<div class="explore-person-img">
+													<a href="#">
+														<img  src="https://ucoguia.com/wp-content/uploads/2019/08/el-horno-de-barrio-ucoguia.jpg" class="rounded-circle" alt="explore person">
+													</a>
+												</div>
+											</div>
+											<div class="col-sm-10">
+												<p>
+													Tortillas de rescoldo, preparación tradicional del campo chileno que se remonta a más de 100 años.
+												</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="explore-open-close-part">
+										<div class="row">
+											<div class="col-sm-5">
+												<button class="close-btn open-btn" onclick="window.location.href='#'">abierto ahora</button>
+											</div>
+											<div class="col-sm-7">
+												<div class="explore-map-icon">
+													<a href="#"><i class="icon-point2 fa fa-share-alt" aria-hidden="true"></i></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+
+						<div class=" ">
+							<div class=" single-explore-item">
+								<div class="single-explore-img thumb-post">
+									<img src="https://henuaiti.com/wp-content/uploads/sites/95/2018/10/Habitacion-doble-caban%CC%83a-de-dos-habitaciones_.jpg" alt="explore image">
+									<div class="single-explore-img-info">
+										<button onclick="window.location.href='#'">Mejor Lugar</button>
+										<div class="single-explore-image-icon-box">
+											<ul>
+												<li>
+													<div class="single-explore-image-icon">
+														<i class="fa fa-arrows-alt"></i>
+													</div>
+												</li>
+												<li>
+													<div class="single-explore-image-icon">
+														<i class="fa fa-bookmark-o"></i>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="single-explore-txt bg-theme-4">
+									<h2><a href="#">Hostería 9-5</a>
+										<a style="color:#00c61c;" href="#"><i class="fa fa-check-circle" aria-hidden="true"></i></a>
+									</h2>
+									<p style="padding-top: 4px;">
+									<a href="#"><i class="icon-point fa fa-map-marker" aria-hidden="true"></i></a> Libertad 501, Lanco, Los Ríos
+								</p>
+									<p class="explore-rating-price">
+										<span class="explore-rating">5.0</span>
+										<a href="#">Lugar 10</a> 
+										<span class="explore-price-box">
+											desde
+											<span class="explore-price">$1000-$22000</span>
+										</span>
+									</p>
+									<div class="explore-person">
+										<div class="row">
+											<div class="col-sm-2">
+												<div class="explore-person-img">
+													<a href="#">
+														<img  src="https://ucoguia.com/wp-content/uploads/2019/08/el-horno-de-barrio-ucoguia.jpg" class="rounded-circle" alt="explore person">
+													</a>
+												</div>
+											</div>
+											<div class="col-sm-10">
+												<p>
+													Tortillas de rescoldo, preparación tradicional del campo chileno que se remonta a más de 100 años.
+												</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="explore-open-close-part">
+										<div class="row">
+											<div class="col-sm-5">
+												<button class="close-btn" onclick="window.location.href='#'">cerrado ahora</button>
+											</div>
+											<div class="col-sm-7">
+												<div class="explore-map-icon">
+													<a href="#"><i class="icon-point2 fa fa-share-alt" aria-hidden="true"></i></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div><!--/.container-->
+
+
+						<div class="container">
+				<div class="section-header separate-padding">
+													<div class="single-list-topics-icon">
+									<i class="">
+										<img width="32px" src="data:image/svg+xml;base64,PHN2ZyBpZD0iU29saWQiIGhlaWdodD0iNTEyIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgd2lkdGg9IjUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSI0MDAiIGN5PSIxMjgiIHI9IjQ4Ii8+PHBhdGggZD0ibTM2MCA0NjRoMTZ2MTZoLTE2eiIvPjxwYXRoIGQ9Im0xNjggNDY0aDE2djE2aC0xNnoiLz48cGF0aCBkPSJtMTY4IDM1MmgyMDh2MzJoLTIwOHoiLz48cGF0aCBkPSJtMTUyIDQ0MHY4aDI0MHYtOGE4LjAwOSA4LjAwOSAwIDAgMCAtOC04aC0yMjRhOC4wMDkgOC4wMDkgMCAwIDAgLTggOHoiLz48cGF0aCBkPSJtNTYgMjg4aDYzLjUyOWMtMi41MjktNDMuMy0xNC41NTctNjguMTY0LTE0LjY5My02OC40MzlhOC4wMTMgOC4wMTMgMCAwIDEgNC42MzQtMTEuMTVsMjQtOGE3Ljk5NCA3Ljk5NCAwIDAgMSA5LjY4NSA0LjAxMWwxNi44NDUgMzMuNjg5IDE2Ljg0NS0zMy42ODlhOCA4IDAgMCAxIDkuNjg1LTQuMDExbDI0IDhhOCA4IDAgMCAxIDQuNjI1IDExLjE2N2MtLjEyOC4yNi0xMi4xNTUgMjUuMTE5LTE0LjY4NCA2OC40MjJoNjMuNTI5YTQwIDQwIDAgMCAwIDcuNTYyLTc5LjI3NiA4IDggMCAwIDEgLTUuMzM2LTEyLjAwOCA0MCA0MCAwIDAgMCAtNTAuNTY4LTU3LjIyMyA4IDggMCAwIDEgLTEwLjc1Ni00LjQ2OSA0OC4wMDYgNDguMDA2IDAgMCAwIC04OS44IDAgOCA4IDAgMCAxIC0xMC43NTYgNC40NjkgNDAuMDA2IDQwLjAwNiAwIDAgMCAtNTAuNTY4IDU3LjIyMyA4IDggMCAwIDEgLTUuMzM2IDEyLjAwOCA0MCA0MCAwIDAgMCA3LjU1OCA3OS4yNzZ6Ii8+PHBhdGggZD0ibTQwMCA1NmE4IDggMCAwIDEgLTgtOHYtOGE4IDggMCAwIDEgMTYgMHY4YTggOCAwIDAgMSAtOCA4eiIvPjxwYXRoIGQ9Im00MDAgMjI0YTggOCAwIDAgMSAtOC04di04YTggOCAwIDAgMSAxNiAwdjhhOCA4IDAgMCAxIC04IDh6Ii8+PHBhdGggZD0ibTQ4OCAxMzZoLThhOCA4IDAgMCAxIDAtMTZoOGE4IDggMCAwIDEgMCAxNnoiLz48cGF0aCBkPSJtMzIwIDEzNmgtOGE4IDggMCAwIDEgMC0xNmg4YTggOCAwIDAgMSAwIDE2eiIvPjxwYXRoIGQ9Im00NjcuODgyIDIwMy44ODJhNy45NzQgNy45NzQgMCAwIDEgLTUuNjU3LTIuMzQzbC01LjY1Ny01LjY1N2E4IDggMCAwIDEgMTEuMzE1LTExLjMxM2w1LjY1NiA1LjY1N2E4IDggMCAwIDEgLTUuNjU3IDEzLjY1NnoiLz48cGF0aCBkPSJtMzM3Ljc3NCA3My43NzRhNy45NzggNy45NzggMCAwIDEgLTUuNjU3LTIuMzQzbC01LjY1Ni01LjY1N2E4IDggMCAxIDEgMTEuMzE0LTExLjMxM2w1LjY1NyA1LjY1N2E4IDggMCAwIDEgLTUuNjU4IDEzLjY1NnoiLz48cGF0aCBkPSJtNDYyLjIyNiA3My43NzRhOCA4IDAgMCAxIC01LjY1OC0xMy42NTZsNS42NTctNS42NTdhOCA4IDAgMSAxIDExLjMxNCAxMS4zMTNsLTUuNjU2IDUuNjU3YTcuOTc4IDcuOTc4IDAgMCAxIC01LjY1NyAyLjM0M3oiLz48cGF0aCBkPSJtMzMyLjExOCAyMDMuODgyYTggOCAwIDAgMSAtNS42NTctMTMuNjU2bDUuNjU2LTUuNjU3YTggOCAwIDEgMSAxMS4zMTUgMTEuMzEzbC01LjY1NyA1LjY1N2E3Ljk3NCA3Ljk3NCAwIDAgMSAtNS42NTcgMi4zNDN6Ii8+PHBhdGggZD0ibTE2MCA0MDBhOCA4IDAgMCAxIC04LTh2LTQ4YTggOCAwIDAgMSA4LThoMjUuNTQxYy0xLjAzLTEwLjc0Ni0xLjU0MS0yMS4yOTItMS41NDEtMzIgMC00MS4xODMgOC4zNjYtNjkuOCAxMy4zMTQtODMuMTI5bC05LjI2MS0zLjA4Ny0yMC45IDQxLjc5NGE4IDggMCAwIDEgLTE0LjMxIDBsLTIwLjktNDEuNzk0LTkuMjYxIDMuMDg3YzQuOTUyIDEzLjMyOSAxMy4zMTggNDEuOTQ2IDEzLjMxOCA4My4xMjkgMCA1Ny43LTE0Ljg1MyAxMDQuNjE3LTI5LjIxNyAxNDkuOTkzLTIuODIxIDguOTEzLTUuNTMgMTcuNDcxLTguMSAyNi4wMDdoNTMuMzE3di0xNmgtOGE4IDggMCAwIDEgLTgtOHYtMTZhMjQuMDI4IDI0LjAyOCAwIDAgMSAyNC0yNGgyMTZ2LTE2eiIvPjxwYXRoIGQ9Im0yMDAgNDY0aDE0NHYxNmgtMTQ0eiIvPjwvc3ZnPg==" />
+									</i>
+								</div>
+					<h2>Parques</h2>
+					<p>Explora lugares increíbles</p>
+				</div><!--/.section-header-->
+				<div class="explore-content ">
+
+					
+					<div class="row  instaapp  owl-carousel">
+
+					
+
+												<div class="">
+							<div class="single-explore-item">
+								<div class="single-explore-img thumb-post">
+									<img src="https://www.revistaenfoque.cl/wp-content/uploads/2020/12/Rio-Leufucade.jpg" alt="explore image">
+									<div class="single-explore-img-info">
+										<button onclick="window.location.href='#'">Mejor Lugar</button>
+										<div class="single-explore-image-icon-box">
+											<ul>
+												<li>
+													<div class="single-explore-image-icon">
+														<i class="fa fa-arrows-alt"></i>
+													</div>
+												</li>
+												<li>
+													<div class="single-explore-image-icon">
+														<i class="fa fa-bookmark-o"></i>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="single-explore-txt bg-theme-2">
+									<h2><a href="#">Río Leufucade</a>
+										<a style="color:#00c61c;" href="#"><i class="fa fa-check-circle" aria-hidden="true"></i></a>
+									</h2>
+									<p style="padding-top: 4px;">
+									<a href="#"><i class="icon-point fa fa-map-marker" aria-hidden="true"></i></a> Yungai 878, Lanco, Los Ríos
+								</p>
+									<p class="explore-rating-price">
+										<span class="explore-rating">5.0</span>
+										<a href="#">Lugar 10</a> 
+										<span class="explore-price-box">
+											desde
+											<span class="explore-price">$1000-$12000</span>
+										</span>
+									</p>
+									<div class="explore-person">
+										<div class="row">
+											<div class="col-sm-2">
+												<div class="explore-person-img">
+													<a href="#">
+														<img  src="https://ucoguia.com/wp-content/uploads/2019/08/el-horno-de-barrio-ucoguia.jpg" class="rounded-circle" alt="explore person">
+													</a>
+												</div>
+											</div>
+											<div class="col-sm-10">
+												<p>
+													Tortillas de rescoldo, preparación tradicional del campo chileno que se remonta a más de 100 años.
+												</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="explore-open-close-part">
+										<div class="row">
+											<div class="col-sm-5">
+												<button class="close-btn open-btn" onclick="window.location.href='#'">abierto ahora</button>
+											</div>
+											<div class="col-sm-7">
+												<div class="explore-map-icon">
+													<a href="#"><i class="icon-point2 fa fa-share-alt" aria-hidden="true"></i></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+												<div class="  ">
+							<div class=" single-explore-item">
+								<div class=" single-explore-img thumb-post">
+									<img src="http://formacionib.org/noticias/IMG/arton712.jpg?1551873179" alt="explore image">
+									<div class="single-explore-img-info">
+										<button onclick="window.location.href='#'">Mejor Lugar</button>
+										<div class="single-explore-image-icon-box">
+											<ul>
+												<li>
+													<div class="single-explore-image-icon">
+														<i class="fa fa-arrows-alt"></i>
+													</div>
+												</li>
+												<li>
+													<div class="single-explore-image-icon">
+														<i class="fa fa-bookmark-o"></i>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="single-explore-txt bg-theme-2">
+									<h2><a href="#">La Candelaria</a>
+										<a style="color:#00c61c;" href="#"><i class="fa fa-check-circle" aria-hidden="true"></i></a>
+									</h2>
+									<p style="padding-top: 4px;">
+									<a href="#"><i class="icon-point fa fa-map-marker" aria-hidden="true"></i></a> Arauco 777, Lanco, Los Ríos
+								</p>
+									<p class="explore-rating-price">
+										<span class="explore-rating">5.0</span>
+										<a href="#">Lugar 10</a> 
+										<span class="explore-price-box">
+											desde
+											<span class="explore-price">$1000-$22000</span>
+										</span>
+									</p>
+									<div class="explore-person">
+										<div class="row">
+											<div class="col-sm-2">
+												<div class="explore-person-img">
+													<a href="#">
+														<img  src="https://ucoguia.com/wp-content/uploads/2019/08/el-horno-de-barrio-ucoguia.jpg" class="rounded-circle" alt="explore person">
+													</a>
+												</div>
+											</div>
+											<div class="col-sm-10">
+												<p>
+													Tortillas de rescoldo, preparación tradicional del campo chileno que se remonta a más de 100 años.
+												</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="explore-open-close-part">
+										<div class="row">
+											<div class="col-sm-5">
+												<button class="close-btn open-btn" onclick="window.location.href='#'">abierto ahora</button>
+											</div>
+											<div class="col-sm-7">
+												<div class="explore-map-icon">
+													<a href="#"><i class="icon-point2 fa fa-share-alt" aria-hidden="true"></i></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+
+						<div class=" ">
+							<div class=" single-explore-item">
+								<div class="single-explore-img thumb-post">
+									<img src="https://www.indap.gob.cl/images/default-source/default-album/predioslanco-1.jpg?sfvrsn=0" alt="explore image">
+									<div class="single-explore-img-info">
+										<button onclick="window.location.href='#'">Mejor Lugar</button>
+										<div class="single-explore-image-icon-box">
+											<ul>
+												<li>
+													<div class="single-explore-image-icon">
+														<i class="fa fa-arrows-alt"></i>
+													</div>
+												</li>
+												<li>
+													<div class="single-explore-image-icon">
+														<i class="fa fa-bookmark-o"></i>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="single-explore-txt bg-theme-2">
+									<h2><a href="#">Viejo Roble</a>
+										<a style="color:#00c61c;" href="#"><i class="fa fa-check-circle" aria-hidden="true"></i></a>
+									</h2>
+									<p style="padding-top: 4px;">
+									<a href="#"><i class="icon-point fa fa-map-marker" aria-hidden="true"></i></a> Libertad 501, Lanco, Los Ríos
+								</p>
+									<p class="explore-rating-price">
+										<span class="explore-rating">5.0</span>
+										<a href="#">Lugar 10</a> 
+										<span class="explore-price-box">
+											desde
+											<span class="explore-price">$1000-$22000</span>
+										</span>
+									</p>
+									<div class="explore-person">
+										<div class="row">
+											<div class="col-sm-2">
+												<div class="explore-person-img">
+													<a href="#">
+														<img  src="https://ucoguia.com/wp-content/uploads/2019/08/el-horno-de-barrio-ucoguia.jpg" class="rounded-circle" alt="explore person">
+													</a>
+												</div>
+											</div>
+											<div class="col-sm-10">
+												<p>
+													Tortillas de rescoldo, preparación tradicional del campo chileno que se remonta a más de 100 años.
+												</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="explore-open-close-part">
+										<div class="row">
+											<div class="col-sm-5">
+												<button class="close-btn" onclick="window.location.href='#'">cerrado ahora</button>
+											</div>
+											<div class="col-sm-7">
+												<div class="explore-map-icon">
+													<a href="#"><i class="icon-point2 fa fa-share-alt" aria-hidden="true"></i></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+	<div class=" ">
+							<div class="single-explore-item">
+								<div class="single-explore-img thumb-post">
+									<img src="https://www.noticiaslosrios.cl/wp-content/uploads/2014/07/LANCO.jpg" alt="explore image">
+									<div class="single-explore-img-info">
+										<button onclick="window.location.href='#'">Mejor Lugar</button>
+										<div class="single-explore-image-icon-box">
+											<ul>
+												<li>
+													<div class="single-explore-image-icon">
+														<i class="fa fa-arrows-alt"></i>
+													</div>
+												</li>
+												<li>
+													<div class="single-explore-image-icon">
+														<i class="fa fa-bookmark-o"></i>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="single-explore-txt bg-theme-2">
+									<h2><a href="#">Plaza Lanco</a>
+										<a style="color:#00c61c;" href="#"><i class="fa fa-check-circle" aria-hidden="true"></i></a>
+									</h2>
+									<p style="padding-top: 4px;">
+									<a href="#"><i class="icon-point fa fa-map-marker" aria-hidden="true"></i></a> Dieciocho 88, Lanco, Los Ríos
+								</p>
+									<p class="explore-rating-price">
+										<span class="explore-rating">5.0</span>
+										<a href="#">Lugar 10</a> 
+										<span class="explore-price-box">
+											desde
+											<span class="explore-price">$1000-$3000</span>
+										</span>
+									</p>
+									<div class="explore-person">
+										<div class="row">
+											<div class="col-sm-2">
+												<div class="explore-person-img">
+													<a href="#">
+														<img  src="https://ucoguia.com/wp-content/uploads/2019/08/el-horno-de-barrio-ucoguia.jpg" class="rounded-circle" alt="explore person">
+													</a>
+												</div>
+											</div>
+											<div class="col-sm-10">
+												<p>
+													Tortillas de rescoldo, preparación tradicional del campo chileno que se remonta a más de 100 años.
+												</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="explore-open-close-part">
+										<div class="row">
+											<div class="col-sm-5">
+												<button class="close-btn" onclick="window.location.href='#'">cerrado ahora</button>
+											</div>
+											<div class="col-sm-7">
+												<div class="explore-map-icon">
+													<a href="#"><i class="icon-point2 fa fa-share-alt" aria-hidden="true"></i></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!--/.container-->
+
+			<style>
+				.categories-list .row{
+width: 100%;
+}
+.categories-list {
+					padding-top: 60px;
+				}
+				.categories-list .list-item {
+  margin-bottom: 60px;
+}
+.categories-list .list-item .title {
+  margin-bottom: 10px;
+}
+.categories-list .list-item .title .icon {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #FF7A4E;
+  color: #fff;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.categories-list .list-item .title .icon i {
+  font-size: 14px;
+  line-height: 38px;
+}
+.categories-list .list-item .title h3 {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: normal;
+  vertical-align: middle;
+}
+.categories-list .list-item ul {
+  list-style: none;
+  padding-left: 52px;
+}
+.categories-list .list-item ul li a {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  opacity: 0.6;
+  color: black;
+  display: inline-block;
+  padding: 2px 0;
+      font-family: "Gothic A1", sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+}
+.categories-list .list-item ul li a:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+.categories-list .list-item ul li .count {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+  display: inline-block;
+  font-size: 10px;
+  float: right;
+  top: 7px;
+  position: relative;
+}
+
+.circle-icon {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  text-align: center;
+  line-height: 31px;
+  margin-left: 1px;
+  margin-right: 1px;
+  color: rgba(0, 0, 0, 0.4);
+}
+.circle-icon:hover, .circle-icon.active {
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  color: #4611a7;
+}
+.padding-4000{
+	padding-top: 100px;
+}
+.padding-5000{
+	padding-bottom:50px;
+}
+
+.padding-6000{
+padding-top: 20px;
+padding-bottom: 40px;
+}
+			</style>
+
+		</section><!--/.explore-->
+		<!--explore end -->
+
+		<!--blog start -->
+		<section id="blog" class="blog" >
+			<div class="container">
+
+
+				 <div class="section-title ">
+				<div class="section-header">
+					<i>
+
+						<img width="32px" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTExLjk5OSA1MTEuOTk5IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTEuOTk5IDUxMS45OTk7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxnPg0KCQk8cGF0aCBkPSJNMTg1LjY2MiwxMC44MzNDMTIwLjU5LDM4LjM0Niw3NC44MTIsMTAyLjgzMSw3NC44MTIsMTc3LjgwOWMwLDI5LjM1NSw2Ljk1NCw1Ny42OSwyMC4yNzcsODMuMjcyaDU2LjU2Mw0KCQkJYy01LjgzNS0yNi4xMDgtOC44OTQtNTQuNTExLTguODk0LTgzLjI3MmMwLTU0LjY0NSwxMC43ODctMTA2LjMxMiwzMC4zNzItMTQ1LjQ4M0MxNzcuMDQsMjQuNTA0LDE4MS4yMywxNy4zMzUsMTg1LjY2MiwxMC44MzN6Ig0KCQkJLz4NCgk8L2c+DQo8L2c+DQo8Zz4NCgk8Zz4NCgkJPHBhdGggZD0iTTMxMS44Niw0NS44MzFDMzAwLjE4MywyMi40NzQsMjg1Ljg3LDYuNTYzLDI3MS4wOTksMHYyNjEuMDhoNTguMjIzYzYuMzc3LTI1LjY4NSw5LjcyMy01NC4yMjcsOS43MjMtODMuMjcxDQoJCQlDMzM5LjA0NCwxMjcuNzYxLDMyOS4zOSw4MC44OSwzMTEuODYsNDUuODMxeiIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KCTxnPg0KCQk8cGF0aCBkPSJNMjAwLjE0LDQ1LjgyOWMtMTcuNTMsMzUuMDYtMjcuMTg0LDgxLjkzMS0yNy4xODQsMTMxLjk3OGMtMC4wMDEsMjkuMDQxLDMuMzQsNTcuNTgzLDkuNzA3LDgzLjI3Mmg1OC4yMzlWMA0KCQkJQzIyNi4xMyw2LjU2MywyMTEuODE4LDIyLjQ3NSwyMDAuMTQsNDUuODI5eiIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KCTxnPg0KCQk8cGF0aCBkPSJNMzI2LjMzOCwxMC44MzJjNC40MzEsNi41MDIsOC42MjIsMTMuNjcyLDEyLjUzMywyMS40OTRjMTkuNTg1LDM5LjE3MiwzMC4zNzIsOTAuODM5LDMwLjM3MiwxNDUuNDgzDQoJCQljMCwyOC43NjQtMy4wNjIsNTcuMTY3LTguOTA3LDgzLjI3Mmg1Ni41NzNjMTMuMzI3LTI1LjU5LDIwLjI3OS01My45MjEsMjAuMjc5LTgzLjI3Mg0KCQkJQzQzNy4xODgsMTAyLjgzMSwzOTEuNDEsMzguMzQ2LDMyNi4zMzgsMTAuODMyeiIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KCTxnPg0KCQk8cGF0aCBkPSJNMzMxLjQ5NywzOTEuMTk4aC0zMC4xOThsMC4wMDMsNDUuMzA2aC05MC41OTVsLTAuMDAyLTQ1LjMwNmgtMzAuMTk4bDAuMDAyLDc1LjUwNQ0KCQkJYzAuMDAyLDI0Ljk3NywyMC4zMjEsNDUuMjk2LDQ1LjI5OCw0NS4yOTZoNjAuMzk3YzEyLjA2NiwwLDIzLjQzMi00LjcyMSwzMi4wMDQtMTMuMjkzYzguNTczLTguNTcyLDEzLjI5My0xOS45MzksMTMuMjkyLTMyLjAwNA0KCQkJTDMzMS40OTcsMzkxLjE5OHoiLz4NCgk8L2c+DQo8L2c+DQo8Zz4NCgk8Zz4NCgkJPHBvbHlnb24gcG9pbnRzPSIxMTQuNjE3LDI5MS4yNzggMTY1Ljc5MiwzNjEgMzQ2LjIwOCwzNjEgMzk3LjM4MywyOTEuMjc4IAkJIi8+DQoJPC9nPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo=" />
+
+					</i>
+					<h2>Categorías</h2>
+					<p>Explora y encuentra todo lo que necesitas </p>
+				</div><!--/.section-header-->
+                </div>
+                <!--end section-title-->
+                <div class="categories-list">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-3">
+                            <div class="list-item">
+                                <div class="title">
+                                    <div class="icon">
+									<i class="">
+										<img style="color: white;" width="16px" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE4LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDQ4OS43NzMgNDg5Ljc3MyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDg5Ljc3MyA0ODkuNzczOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8ZyBpZD0iWE1MSURfOTVfIj4NCgk8cGF0aCBpZD0iWE1MSURfOThfIiBkPSJNMTU1LjE4MywzMDUuNjQ2Yy0yLjA4MSwwLjE3NS00LjE1NywwLjI2NS02LjIzOCwwLjI2NWMtNS42OTMsMC0xMS4yMy0wLjgyNi0xNi42NTItMi4wODFMNi44MzQsNDI5LjI5Mw0KCQljLTYuMTU4LDYuMTQ5LTYuMTU4LDE2LjEzNywwLDIyLjI4N2wzMi40NywzMi40NzhjNi4xNTgsNi4xNSwxNi4xMzUsNi4xNSwyMi4yNzYsMGwxNTAuNzg1LTE1MC43NTdsLTI3Ljk0NC0zMC4xNUwxNTUuMTgzLDMwNS42NDYNCgkJeiIvPg0KCTxwYXRoIGlkPSJYTUxJRF85N18iIGQ9Ik00ODUuMzQ1LDEwNC42NDljLTUuODg4LTUuODg1LTE1LjQxNy01Ljg4NS0yMS4zMDQsMGwtODEuMzAzLDgxLjMwMWMtNy42OTMsNy42ODUtMjAuMTU0LDcuNjg1LTI3Ljg0NywwDQoJCWMtNy42NTktNy42NzktNy42NTktMjAuMTMsMC0yNy44MDdsODAuOTAxLTgwLjg4NGM2LjExMi02LjExOCw2LjExMi0xNi4wMzYsMC0yMi4xNjhjLTYuMTQxLTYuMTEtMTYuMDU1LTYuMTEtMjIuMTY3LDANCgkJbC04MC44NjgsODAuODc2Yy03LjY5Myw3LjY5My0yMC4xNCw3LjY5My0yNy44MzMsMGMtNy42NzctNy42NzYtNy42NzctMjAuMTM2LDAtMjcuODA2bDgxLjI4Ni04MS4yOTMNCgkJYzUuOTA0LTUuODk0LDUuOTA0LTE1LjQ0MSwwLTIxLjM0M2MtNS44ODgtNS44OTUtMTUuNDM0LTUuODk1LTIxLjMzOCwwbC05MS40NTgsOTEuNDYzDQoJCWMtMjEuOTg5LDIyLjAwMy0yOC45MzUsNTIuODg4LTIxLjgxNiw4MC45OTFsNjEuMzEsNjEuMzE0YzI4LjEwMSw3LjA5Myw1OS4wMDEsMC4xNDQsODAuOTY1LTIxLjg0MWw5MS40NzEtOTEuNDU4DQoJCUM0OTEuMjQ5LDEyMC4xLDQ5MS4yNDksMTEwLjU0Myw0ODUuMzQ1LDEwNC42NDl6Ii8+DQoJPHBhdGggaWQ9IlhNTElEXzk2XyIgZD0iTTQxLjA5MywxMy43OTFjLTMuMTM0LTMuMTM1LTcuMzcyLTQuODU0LTExLjcyNC00Ljg1NGMtMC45MjYsMC0xLjg1NywwLjA3OS0yLjc2NiwwLjIzMQ0KCQljLTUuMjk1LDAuODk2LTkuODM4LDQuMjk1LTEyLjE3Miw5LjEzM2MtMjYuNzksNTUuMzczLTE1LjU5NCwxMjEuNjMxLDI3Ljg5NCwxNjUuMTIxbDc3LjgwMSw3Ny43OTENCgkJYzcuNjc2LDcuNjg1LDE4LjA1NSwxMS45MzksMjguODE5LDExLjkzOWMxLjE1MSwwLDIuMzA1LTAuMDQ4LDMuNDU2LTAuMTQzbDQ1LjE3MS0zLjg1NWwxOTYuOTcxLDIxMi40ODkNCgkJYzMuMDU4LDMuMzAzLDcuMzQyLDUuMjIxLDExLjg1NSw1LjMxYzAuMDkzLDAsMC4xOSwwLDAuMjg4LDBjNC40MTIsMCw4LjYzNi0xLjc0MywxMS43NzEtNC44NTVsMzMuNzM0LTMzLjc0MQ0KCQljMy4xMTctMy4xMSw0Ljg1OS03LjMzMSw0Ljg1OS0xMS43M2MwLTQuMzk4LTEuNzQyLTguNjIyLTQuODQ2LTExLjczMkw0MS4wOTMsMTMuNzkxeiIvPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo=" />	
+									</i>
+
+                                    </div>
+                                    <h3><a href="#">Alimentación</a></h3>
+                                </div>
+                                <!--end title-->
+                                <ul>
+                                    <li><a href="">Bar</a><figure class="count">3</figure></li>
+                                    <li><a href="">Restaurante</a><figure class="count">2</figure></li>
+                                    <li><a href="">Tortilleria</a><figure class="count">4</figure></li>
+                                    <li><a href="">Supermercados</a><figure class="count">4</figure></li>
+
+                                </ul>
+                            </div>
+                            <!--end list-item-->
+                        </div>
+                        <!--end col-md-3-->
+                        <div class="col-md-3 col-sm-3">
+                            <div class="list-item">
+                                <div class="title">
+                                    <div class="icon">
+                                    										<i class="">
+										<img width="16px" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNDkwLjcgNDkwLjciIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQ5MC43IDQ5MC43OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8Zz4NCgk8Zz4NCgkJPHBhdGggZD0iTTQzNi4yLDE1NC42SDE4Mi40Yy0xMi40LDAtMzMuMSw0LjctMzMuMSwzNi42VjI0MGgzMjB2LTQ4LjhDNDY5LjMsMTU5LjQsNDQ4LjYsMTU0LjYsNDM2LjIsMTU0LjZ6Ii8+DQoJPC9nPg0KPC9nPg0KPGc+DQoJPGc+DQoJCTxwb2x5Z29uIHBvaW50cz0iODAuMywyNTAuNiAzMiwyNTAuNiAzMiw4MCAwLDgwIDAsNDEwLjcgMzIsNDEwLjcgMzIsMzI1LjMgNDU4LjcsMzI1LjMgNDU4LjcsNDEwLjYgNDkwLjcsNDEwLjYgNDkwLjcsMjUwLjYgCQkNCgkJCSIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KCTxnPg0KCQk8Y2lyY2xlIGN4PSI4NS4zIiBjeT0iMTk3LjMiIHI9IjQ0LjciLz4NCgk8L2c+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg==" />
+									</i>
+                                    </div>
+                                    <h3><a href="#">Alojamiento</a></h3>
+                                </div>
+                                <!--end title-->
+                                <ul>
+                                    <li><a href="">Hotel</a><figure class="count">4</figure></li>
+                                    <li><a href="">Cabañas</a><figure class="count">3</figure></li>
+                                </ul>
+                            </div>
+                            <!--end list-item-->
+                        </div>
+                        <!--end col-md-3-->
+                        <div class="col-md-3 col-sm-3">
+                            <div class="list-item">
+                                <div class="title">
+                                    <div class="icon">
+                                    									<i class="">
+										<img width="16px" src="data:image/svg+xml;base64,PHN2ZyBpZD0iU29saWQiIGhlaWdodD0iNTEyIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgd2lkdGg9IjUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSI0MDAiIGN5PSIxMjgiIHI9IjQ4Ii8+PHBhdGggZD0ibTM2MCA0NjRoMTZ2MTZoLTE2eiIvPjxwYXRoIGQ9Im0xNjggNDY0aDE2djE2aC0xNnoiLz48cGF0aCBkPSJtMTY4IDM1MmgyMDh2MzJoLTIwOHoiLz48cGF0aCBkPSJtMTUyIDQ0MHY4aDI0MHYtOGE4LjAwOSA4LjAwOSAwIDAgMCAtOC04aC0yMjRhOC4wMDkgOC4wMDkgMCAwIDAgLTggOHoiLz48cGF0aCBkPSJtNTYgMjg4aDYzLjUyOWMtMi41MjktNDMuMy0xNC41NTctNjguMTY0LTE0LjY5My02OC40MzlhOC4wMTMgOC4wMTMgMCAwIDEgNC42MzQtMTEuMTVsMjQtOGE3Ljk5NCA3Ljk5NCAwIDAgMSA5LjY4NSA0LjAxMWwxNi44NDUgMzMuNjg5IDE2Ljg0NS0zMy42ODlhOCA4IDAgMCAxIDkuNjg1LTQuMDExbDI0IDhhOCA4IDAgMCAxIDQuNjI1IDExLjE2N2MtLjEyOC4yNi0xMi4xNTUgMjUuMTE5LTE0LjY4NCA2OC40MjJoNjMuNTI5YTQwIDQwIDAgMCAwIDcuNTYyLTc5LjI3NiA4IDggMCAwIDEgLTUuMzM2LTEyLjAwOCA0MCA0MCAwIDAgMCAtNTAuNTY4LTU3LjIyMyA4IDggMCAwIDEgLTEwLjc1Ni00LjQ2OSA0OC4wMDYgNDguMDA2IDAgMCAwIC04OS44IDAgOCA4IDAgMCAxIC0xMC43NTYgNC40NjkgNDAuMDA2IDQwLjAwNiAwIDAgMCAtNTAuNTY4IDU3LjIyMyA4IDggMCAwIDEgLTUuMzM2IDEyLjAwOCA0MCA0MCAwIDAgMCA3LjU1OCA3OS4yNzZ6Ii8+PHBhdGggZD0ibTQwMCA1NmE4IDggMCAwIDEgLTgtOHYtOGE4IDggMCAwIDEgMTYgMHY4YTggOCAwIDAgMSAtOCA4eiIvPjxwYXRoIGQ9Im00MDAgMjI0YTggOCAwIDAgMSAtOC04di04YTggOCAwIDAgMSAxNiAwdjhhOCA4IDAgMCAxIC04IDh6Ii8+PHBhdGggZD0ibTQ4OCAxMzZoLThhOCA4IDAgMCAxIDAtMTZoOGE4IDggMCAwIDEgMCAxNnoiLz48cGF0aCBkPSJtMzIwIDEzNmgtOGE4IDggMCAwIDEgMC0xNmg4YTggOCAwIDAgMSAwIDE2eiIvPjxwYXRoIGQ9Im00NjcuODgyIDIwMy44ODJhNy45NzQgNy45NzQgMCAwIDEgLTUuNjU3LTIuMzQzbC01LjY1Ny01LjY1N2E4IDggMCAwIDEgMTEuMzE1LTExLjMxM2w1LjY1NiA1LjY1N2E4IDggMCAwIDEgLTUuNjU3IDEzLjY1NnoiLz48cGF0aCBkPSJtMzM3Ljc3NCA3My43NzRhNy45NzggNy45NzggMCAwIDEgLTUuNjU3LTIuMzQzbC01LjY1Ni01LjY1N2E4IDggMCAxIDEgMTEuMzE0LTExLjMxM2w1LjY1NyA1LjY1N2E4IDggMCAwIDEgLTUuNjU4IDEzLjY1NnoiLz48cGF0aCBkPSJtNDYyLjIyNiA3My43NzRhOCA4IDAgMCAxIC01LjY1OC0xMy42NTZsNS42NTctNS42NTdhOCA4IDAgMSAxIDExLjMxNCAxMS4zMTNsLTUuNjU2IDUuNjU3YTcuOTc4IDcuOTc4IDAgMCAxIC01LjY1NyAyLjM0M3oiLz48cGF0aCBkPSJtMzMyLjExOCAyMDMuODgyYTggOCAwIDAgMSAtNS42NTctMTMuNjU2bDUuNjU2LTUuNjU3YTggOCAwIDEgMSAxMS4zMTUgMTEuMzEzbC01LjY1NyA1LjY1N2E3Ljk3NCA3Ljk3NCAwIDAgMSAtNS42NTcgMi4zNDN6Ii8+PHBhdGggZD0ibTE2MCA0MDBhOCA4IDAgMCAxIC04LTh2LTQ4YTggOCAwIDAgMSA4LThoMjUuNTQxYy0xLjAzLTEwLjc0Ni0xLjU0MS0yMS4yOTItMS41NDEtMzIgMC00MS4xODMgOC4zNjYtNjkuOCAxMy4zMTQtODMuMTI5bC05LjI2MS0zLjA4Ny0yMC45IDQxLjc5NGE4IDggMCAwIDEgLTE0LjMxIDBsLTIwLjktNDEuNzk0LTkuMjYxIDMuMDg3YzQuOTUyIDEzLjMyOSAxMy4zMTggNDEuOTQ2IDEzLjMxOCA4My4xMjkgMCA1Ny43LTE0Ljg1MyAxMDQuNjE3LTI5LjIxNyAxNDkuOTkzLTIuODIxIDguOTEzLTUuNTMgMTcuNDcxLTguMSAyNi4wMDdoNTMuMzE3di0xNmgtOGE4IDggMCAwIDEgLTgtOHYtMTZhMjQuMDI4IDI0LjAyOCAwIDAgMSAyNC0yNGgyMTZ2LTE2eiIvPjxwYXRoIGQ9Im0yMDAgNDY0aDE0NHYxNmgtMTQ0eiIvPjwvc3ZnPg==" />
+									</i>
+                                    </div>
+                                    <h3><a href="#">Parques</a></h3>
+                                </div>
+                                <!--end title-->
+                                <ul>
+                                    <li><a href="">Centro</a><figure class="count">10</figure></li>
+                                    <li><a href="">Rutal</a><figure class="count">4</figure></li>
+
+                                </ul>
+                            </div>
+                            <!--end list-item-->
+                        </div>
+                        <!--end col-md-3-->
+                        <div class="col-md-3 col-sm-3">
+                            <div class="list-item">
+                                <div class="title">
+                                    <div class="icon">
+                                    										<i class="">
+										<img width="16px"src="data:image/svg+xml;base64,PHN2ZyBpZD0iQ2FwYV8xIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHdpZHRoPSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGc+PHBhdGggZD0ibTQ4MiAwaC0yMTBjLTE2LjU2OSAwLTMwIDEzLjQzMS0zMCAzMHYxMzMuNjdsMTA2LjMzMSAxMDYuMzNoMTMzLjY2OWMxNi41NjkgMCAzMC0xMy40MzEgMzAtMzB2LTIxMGMwLTE2LjU2OS0xMy40MzEtMzAtMzAtMzB6bS0xNjIuOTMyIDkyLjA2OGMtOC4yODQgMC0xNS02LjcxNi0xNS0xNXM2LjcxNi0xNSAxNS0xNSAxNSA2LjcxNiAxNSAxNS02LjcxNiAxNS0xNSAxNXptNTcuOTMyIDU3LjkzMmMtOC4yODQgMC0xNS02LjcxNi0xNS0xNXM2LjcxNi0xNSAxNS0xNSAxNSA2LjcxNiAxNSAxNS02LjcxNiAxNS0xNSAxNXptNTcuOTI2IDU3LjkyNmMtOC4yODQgMC0xNS02LjcxNi0xNS0xNXM2LjcxNi0xNSAxNS0xNSAxNSA2LjcxNiAxNSAxNS02LjcxNiAxNS0xNSAxNXoiLz48cGF0aCBkPSJtMzQ4LjE5OCAzMTIuMjk0LTE0OC40OTItMTQ4LjQ5MmMtMTEuNzE2LTExLjcxNi0zMC43MTEtMTEuNzE2LTQyLjQyNiAwbC0xNDguNDkzIDE0OC40OTJjLTExLjcxNiAxMS43MTYtMTEuNzE2IDMwLjcxMSAwIDQyLjQyNmwxNDguNDkyIDE0OC40OTJjMTEuNzE2IDExLjcxNiAzMC43MTEgMTEuNzE2IDQyLjQyNiAwbDE0OC40OTItMTQ4LjQ5MmMxMS43MTctMTEuNzE1IDExLjcxNy0zMC43MS4wMDEtNDIuNDI2em0tMjMzLjM0NSA0Mi40MjdjLTUuODU4IDUuODU4LTE1LjM1NSA1Ljg1OC0yMS4yMTMgMHMtNS44NTgtMTUuMzU1IDAtMjEuMjEzIDE1LjM1NS01Ljg1OCAyMS4yMTMgMGM1Ljg1OCA1Ljg1NyA1Ljg1OCAxNS4zNTUgMCAyMS4yMTN6bTIxLjIxMy00Mi40MjdjLTUuODU4LTUuODU4LTUuODU4LTE1LjM1NSAwLTIxLjIxM3MxNS4zNTUtNS44NTggMjEuMjEzIDAgNS44NTggMTUuMzU1IDAgMjEuMjEzLTE1LjM1NSA1Ljg1OC0yMS4yMTMgMHptNDIuNDI2IDEwNi4wNjZjLTUuODU4IDUuODU4LTE1LjM1NSA1Ljg1OC0yMS4yMTMgMHMtNS44NTgtMTUuMzU1IDAtMjEuMjEzIDE1LjM1NS01Ljg1OCAyMS4yMTMgMCA1Ljg1OCAxNS4zNTYgMCAyMS4yMTN6bTAtMTQ4LjQ5MmMtNS44NTgtNS44NTgtNS44NTgtMTUuMzU1IDAtMjEuMjEzczE1LjM1NS01Ljg1OCAyMS4yMTMgMCA1Ljg1OCAxNS4zNTUgMCAyMS4yMTNjLTUuODU3IDUuODU4LTE1LjM1NSA1Ljg1OC0yMS4yMTMgMHptNDIuNDI3IDEwNi4wNjZjLTUuODU4IDUuODU4LTE1LjM1NSA1Ljg1OC0yMS4yMTMgMHMtNS44NTgtMTUuMzU1IDAtMjEuMjEzIDE1LjM1NS01Ljg1OCAyMS4yMTMgMCA1Ljg1OCAxNS4zNTUgMCAyMS4yMTN6bTQyLjQyNi00Mi40MjZjLTUuODU4IDUuODU4LTE1LjM1NSA1Ljg1OC0yMS4yMTMgMHMtNS44NTgtMTUuMzU1IDAtMjEuMjEzIDE1LjM1NS01Ljg1OCAyMS4yMTMgMGM1Ljg1OCA1Ljg1NyA1Ljg1OCAxNS4zNTUgMCAyMS4yMTN6Ii8+PC9nPjwvc3ZnPg==" />
+									</i>
+                                    </div>
+                                    <h3><a href="#">Entretenimiento</a></h3>
+                                </div>
+                                <!--end title-->
+                                <ul>
+                                    <li><a href="">Teatro</a><figure class="count">8</figure></li>
+                                                                        <li><a href="">Gym</a><figure class="count">8</figure></li>
+
+                                    <li><a href="">Estadios</a><figure class="count">7</figure></li>
+                                    <li><a href="">Videojuegos </a><figure class="count">2</figure></li>
+                                </ul>
+                            </div>
+                            <!--end list-item-->
+                        </div>
+                        <!--end col-md-3-->
+                    </div>
+                    <!--end row-->
+                    <div class="row">
+                        <div class="col-md-3 col-sm-3">
+                            <div class="list-item">
+                                <div class="title">
+                                    <div class="icon">
+									<i class="">
+<img width="16px" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgMzg4LjggMzg4LjgiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDM4OC44IDM4OC44OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8Zz4NCgk8Zz4NCgkJPHBhdGggZD0iTTIyMS44NCwyMDkuOTM5Yy00LjQxOCwwLTgtMy41ODItOC04di0zNi41NmgtMzguODh2MzYuNTZjMCw0LjQxOC0zLjU4Miw4LTgsOEgxMzAuNHYzOC44aDM2LjU2YzQuNDE4LDAsOCwzLjU4Miw4LDgNCgkJCXYzNi41NmgzOC44di0zNi41NmMwLTQuNDE4LDMuNTgyLTgsOC04aDM2LjY0di0zOC44SDIyMS44NHoiLz4NCgk8L2c+DQo8L2c+DQo8Zz4NCgk8Zz4NCgkJPHBhdGggZD0iTTMzMy42LDg5LjQ1OUg1NS4yYy0yNS40NCwwLTU1LjIsMTQuNDgtNTUuMiw1NS4ydjE3My44NGMwLDQwLjcyLDI5Ljc2LDU1LjIsNTUuMiw1NS4yaDI3OC40DQoJCQljMjUuNDQsMCw1NS4yLTE0LjQ4LDU1LjItNTUuMnYtMTczLjg0QzM4OC44LDEwMy45MzksMzU5LjEyLDg5LjQ1OSwzMzMuNiw4OS40NTl6IE0yNzQuNCwyNTIuODE5DQoJCQljMCw2LjU4My01LjMzNywxMS45Mi0xMS45MiwxMS45MmgtMzIuNjR2MzIuNjRjMCw2LjU4My01LjMzNywxMS45Mi0xMS45MiwxMS45MmgtNDcuMDRjLTYuNTgzLDAtMTEuOTItNS4zMzctMTEuOTItMTEuOTJ2LTMyLjY0DQoJCQlIMTI2LjRjLTYuNTgzLDAuMDQ0LTExLjk1Ni01LjI1Ny0xMi0xMS44NGMwLTAuMDI3LDAtMC4wNTQsMC0wLjA4di00Ni45NmMwLTYuNTgzLDUuMzM3LTExLjkyLDExLjkyLTExLjkyaDMyLjY0di0zMi42NA0KCQkJYzAtNi41ODMsNS4zMzctMTEuOTIsMTEuOTItMTEuOTJoNDYuOTZjNi41ODMsMCwxMS45Miw1LjMzNywxMS45MiwxMS45MnYzMi42NGgzMi42NGM2LjU4My0wLjA0NCwxMS45NTYsNS4yNTcsMTIsMTEuODQNCgkJCWMwLDAuMDI3LDAsMC4wNTMsMCwwLjA4VjI1Mi44MTl6Ii8+DQoJPC9nPg0KPC9nPg0KPGc+DQoJPGc+DQoJCTxwYXRoIGQ9Ik0yNDUuODM1LDE1LjEzOWMtMC44NzctMC4wNS0xLjc1Ny0wLjA1LTIuNjM1LDBoLTk3LjZjLTEyLjgzNy0wLjcyNy0yMy44MzMsOS4wODktMjQuNTYsMjEuOTI1DQoJCQljLTAuMDUsMC44NzgtMC4wNSwxLjc1NywwLDIuNjM1djM2aDE2bDAuMDgtMzZjMC0yLjMyLDAtOC41Niw4LjU2LTguNTZoOTcuNTJjOC41NiwwLDguNTYsNi4xNiw4LjU2LDguNTZ2MzZoMTZ2LTM2DQoJCQlDMjY4LjQ4OCwyNi44NjIsMjU4LjY3MSwxNS44NjcsMjQ1LjgzNSwxNS4xMzl6Ii8+DQoJPC9nPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo=" />
+									</i>
+                                    </div>
+                                    <h3><a href="#">Salud</a></h3>
+                                </div>
+                                <!--end title-->
+                                <ul>
+                                    <li><a href="">Hospital</a><figure class="count">6</figure></li>
+                                    <li><a href="">Clinica</a><figure class="count">9</figure></li>
+                                    <li><a href="">Dentista</a><figure class="count">1</figure></li>
+                                    <li><a href="">Farmacias </a><figure class="count">4</figure></li>
+                                                                        <li><a href="">Veterinaria </a><figure class="count">4</figure></li>
+
+                                </ul>
+                            </div>
+                            <!--end list-item-->
+                        </div>
+                        <!--end col-md-3-->
+                        <div class="col-md-3 col-sm-3">
+                            <div class="list-item">
+                                <div class="title">
+                                    <div class="icon">
+                                    	<i><img width="16px" src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjUxMnB0IiB2aWV3Qm94PSIwIDAgNTEyIDUxMi4wMDAyNSIgd2lkdGg9IjUxMnB0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Im0zOTYuNDI1NzgxIDI2OC4zNDM3NWg1OS45OTYwOTR2MTQzLjY1NjI1aC01OS45OTYwOTR6bTAgMCIvPjxwYXRoIGQ9Im0yODIuODA4NTk0IDI2OC4zNDM3NWg2MHYxNDMuNjU2MjVoLTYwem0wIDAiLz48cGF0aCBkPSJtMTY5LjE5MTQwNiAyNjguMzQzNzVoNjB2MTQzLjY1NjI1aC02MHptMCAwIi8+PHBhdGggZD0ibTU1LjU3ODEyNSAyNjguMzQzNzVoNTkuOTk2MDk0djE0My42NTYyNWgtNTkuOTk2MDk0em0wIDAiLz48cGF0aCBkPSJtNDc2LjQyNTc4MSAyMjMuMzQzNzV2LTE1aC00NDAuODQ3NjU2djE1YzAgOC4yODUxNTYgNi43MTQ4NDQgMTUgMTUgMTVoNDEwLjg0NzY1NmM4LjI4MTI1IDAgMTUtNi43MTQ4NDQgMTUtMTV6bTAgMCIvPjxwYXRoIGQ9Im00OTYuOTkyMTg4IDQ0MmgtNDgxLjk3NjU2M2MtOC4yODUxNTYgMC0xNSA2LjcxNDg0NC0xNSAxNXY0MGMwIDguMjg1MTU2IDYuNzE0ODQ0IDE1IDE1IDE1aDQ4MS45NzY1NjNjOC4yODUxNTYgMCAxNS02LjcxNDg0NCAxNS0xNXYtNDBjMC04LjI4NTE1Ni02LjcxNDg0NC0xNS0xNS0xNXptMCAwIi8+PHBhdGggZD0ibTE1IDE3OC4zNDM3NWg0ODJjNi43MTA5MzggMCAxMi42MDU0NjktNC40NTcwMzEgMTQuNDMzNTk0LTEwLjkxNDA2MiAxLjgyNDIxOC02LjQ1NzAzMi0uODU1NDY5LTEzLjM0Mzc1LTYuNTcwMzEzLTE2Ljg1OTM3NmwtMjQxLTE0OC4zNDM3NWMtNC44MjAzMTItMi45Njg3NS0xMC45MDIzNDMtMi45Njg3NS0xNS43MjY1NjIgMGwtMjQxIDE0OC4zNDM3NWMtNS43MTQ4NDQgMy41MTk1MzItOC4zOTQ1MzEgMTAuNDAyMzQ0LTYuNTY2NDA3IDE2Ljg1OTM3NiAxLjgyODEyNiA2LjQ1NzAzMSA3LjcyMjY1NyAxMC45MTQwNjIgMTQuNDI5Njg4IDEwLjkxNDA2MnptMjMwLjgwNDY4OC05MC4xMTcxODhoMjAuMzk0NTMxYzguMjg1MTU2IDAgMTUgNi43MTQ4NDQgMTUgMTUgMCA4LjI4NTE1Ny02LjcxNDg0NCAxNS0xNSAxNWgtMjAuMzk0NTMxYy04LjI4NTE1NyAwLTE1LTYuNzE0ODQzLTE1LTE1IDAtOC4yODUxNTYgNi43MTQ4NDMtMTUgMTUtMTV6bTAgMCIvPjwvc3ZnPg==" /></i>
+                                    </div>
+                                    <h3><a href="#">Financiera</a></h3>
+                                </div>
+                                <!--end title-->
+                                <ul>
+                                    <li><a href="">Bancos</a><figure class="count">3</figure></li>
+                                    <li><a href="">Cajeros</a><figure class="count">2</figure></li>
+                                    <li><a href="">Cajas Vecinas</a><figure class="count">6</figure></li>
+                                    <li><a href="">Envío / Recibo Dinero</a><figure class="count">7</figure></li>
+                                </ul>
+                            </div>
+                            <!--end list-item-->
+                        </div>
+                        <!--end col-md-3-->
+                        <div class="col-md-3 col-sm-3">
+                            <div class="list-item">
+                                <div class="title">
+                                    <div class="icon">
+                                    	<i>
+                                    	<img width="16px" src="data:image/svg+xml;base64,PHN2ZyBpZD0iQ2FwYV8xIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHdpZHRoPSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGc+PHBhdGggZD0ibTQ5My45MTYgODEuNzA3Yy0xNC4xMTMtMjQuMzg4LTM0LjM5Ny00NC44NDItNTguNjU0LTU5LjE1LTI1LjAxOC0xNC43NTctNTMuNjctMjIuNTU3LTgyLjg2Mi0yMi41NTctMjkuMTkxIDAtNTcuODQ2IDcuOC04Mi44NjMgMjIuNTU3LTI0LjI1OCAxNC4zMDktNDQuNTQxIDM0Ljc2My01OC42NTQgNTkuMTUtMi44ODEgNC45NzktMi42NjIgMTEuMTY1LjU2NCAxNS45MjdsNjQuNTExIDk1LjIyM2MuMzc0LS4wMjcuNzQ3LS4wNTcgMS4xMjktLjA1N2g0Ni40NjdsLTkuNDg1LTI4LjQ1N2MtMi42MTktNy44NTkgMS42MjgtMTYuMzU0IDkuNDg3LTE4Ljk3NCA3Ljg2LTIuNjE4IDE2LjM1NCAxLjYyOSAxOC45NzQgOS40ODdsOS44NyAyOS42MTEgOS44Ny0yOS42MTFjMi42MTktNy44NTkgMTEuMTEzLTEyLjEwNyAxOC45NzQtOS40ODcgNy44NTkgMi42MiAxMi4xMDYgMTEuMTE0IDkuNDg3IDE4Ljk3NGwtOS40ODUgMjguNDU3aDQ2LjQ2OGMuMzgxIDAgLjc1NC4wMjkgMS4xMjkuMDU3bDY0LjUxLTk1LjIyM2MzLjIyNS00Ljc2MiAzLjQ0NC0xMC45NDguNTYzLTE1LjkyN3oiLz48cGF0aCBkPSJtMjg5LjE5OSA0ODAuOTM0YzAgMTcuMTMgMTMuOTM2IDMxLjA2NiAzMS4wNjYgMzEuMDY2aDY0LjI2OGMxNy4xMyAwIDMxLjA2Ni0xMy45MzYgMzEuMDY2LTMxLjA2NnYtMjU4LjEzNGgtMTI2LjR6Ii8+PHBhdGggZD0ibTMyLjEzMyAxOTAuNjY3aDE0Mi40Njd2MTQ2LjczM2gtMTQyLjQ2N3oiLz48cGF0aCBkPSJtMTYuMDY2IDQ4MC45MzRjMCAxNy4xMyAxMy45MzYgMzEuMDY2IDMxLjA2NiAzMS4wNjZoMTEyLjQ2OGMxNy4xMyAwIDMxLjA2Ni0xMy45MzYgMzEuMDY2LTMxLjA2NnYtMTEzLjUzNGgtMTc0LjZ6Ii8+PHBhdGggZD0ibTE1OC41MzMgMzEuMDY2YzAtMTQuOTE4LTEwLjY0NS0yNi4xNjctMjQuNzYtMjYuMTY3LTMuNTY5IDAtNy4xNzkuNzItMTAuNzI4IDIuMTQxbC01MC40OTkgMjAuMTk5Yy0xMy44OCA1LjU1Mi0yNC4zNDcgMjEuMDEyLTI0LjM0NyAzNS45NjF2OTcuNDY3aDExMC4zMzR6Ii8+PC9nPjwvc3ZnPg==" /></i>
+                                    </div>
+                                    <h3><a href="#">Belleza</a></h3>
+                                </div>
+                                <!--end title-->
+                                <ul>
+                                    <li><a href="">Diseño y Moda</a><figure class="count">1</figure></li>
+                                    <li><a href="">Peluqueria</a><figure class="count">5</figure></li>
+                                    <li><a href="">Maniquiure</a><figure class="count">4</figure></li>
+
+                                </ul>
+                            </div>
+                            <!--end list-item-->
+                        </div>
+                        <!--end col-md-3-->
+                        <div class="col-md-3 col-sm-3">
+                            <div class="list-item">
+                                <div class="title">
+                                    <div class="icon">
+                                    						<i>
+						<img width="16px" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNDc3Ljg2NyA0NzcuODY3IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0NzcuODY3IDQ3Ny44Njc7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxnPg0KCQk8cGF0aCBkPSJNNDYwLjgsMTE5LjQ2N2gtODUuMzMzdi0xMDIuNEMzNzUuNDY3LDcuNjQxLDM2Ny44MjYsMCwzNTguNCwwSDE3LjA2N0M3LjY0MSwwLDAsNy42NDEsMCwxNy4wNjdWNDA5LjYNCgkJCWMwLDM3LjcwMywzMC41NjQsNjguMjY3LDY4LjI2Nyw2OC4yNjdINDA5LjZjMzcuNzAzLDAsNjguMjY3LTMwLjU2NCw2OC4yNjctNjguMjY3VjEzNi41MzMNCgkJCUM0NzcuODY3LDEyNy4xMDgsNDcwLjIyNiwxMTkuNDY3LDQ2MC44LDExOS40Njd6IE0xMzYuNTMzLDg1LjMzM2gxMDIuNGM5LjQyNiwwLDE3LjA2Nyw3LjY0MSwxNy4wNjcsMTcuMDY3DQoJCQlzLTcuNjQxLDE3LjA2Ny0xNy4wNjcsMTcuMDY3aC0xMDIuNGMtOS40MjYsMC0xNy4wNjctNy42NDEtMTcuMDY3LTE3LjA2N1MxMjcuMTA4LDg1LjMzMywxMzYuNTMzLDg1LjMzM3ogTTI5MC4xMzMsNDA5LjZoLTIwNC44DQoJCQljLTkuNDI2LDAtMTcuMDY3LTcuNjQxLTE3LjA2Ny0xNy4wNjdzNy42NDEtMTcuMDY3LDE3LjA2Ny0xNy4wNjdoMjA0LjhjOS40MjYsMCwxNy4wNjcsNy42NDEsMTcuMDY3LDE3LjA2Nw0KCQkJUzI5OS41NTksNDA5LjYsMjkwLjEzMyw0MDkuNnogTTI5MC4xMzMsMzQxLjMzM2gtMjA0LjhjLTkuNDI2LDAtMTcuMDY3LTcuNjQxLTE3LjA2Ny0xNy4wNjdjMC05LjQyNiw3LjY0MS0xNy4wNjcsMTcuMDY3LTE3LjA2Nw0KCQkJaDIwNC44YzkuNDI2LDAsMTcuMDY3LDcuNjQxLDE3LjA2NywxNy4wNjdDMzA3LjIsMzMzLjY5MiwyOTkuNTU5LDM0MS4zMzMsMjkwLjEzMywzNDEuMzMzeiBNMjkwLjEzMywyNzMuMDY3aC0yMDQuOA0KCQkJYy05LjQyNiwwLTE3LjA2Ny03LjY0MS0xNy4wNjctMTcuMDY3YzAtOS40MjYsNy42NDEtMTcuMDY3LDE3LjA2Ny0xNy4wNjdoMjA0LjhjOS40MjYsMCwxNy4wNjcsNy42NDEsMTcuMDY3LDE3LjA2Nw0KCQkJQzMwNy4yLDI2NS40MjYsMjk5LjU1OSwyNzMuMDY3LDI5MC4xMzMsMjczLjA2N3ogTTI5MC4xMzMsMjA0LjhoLTIwNC44Yy05LjQyNiwwLTE3LjA2Ny03LjY0MS0xNy4wNjctMTcuMDY3DQoJCQljMC05LjQyNiw3LjY0MS0xNy4wNjcsMTcuMDY3LTE3LjA2N2gyMDQuOGM5LjQyNiwwLDE3LjA2Nyw3LjY0MSwxNy4wNjcsMTcuMDY3QzMwNy4yLDE5Ny4xNTksMjk5LjU1OSwyMDQuOCwyOTAuMTMzLDIwNC44eg0KCQkJIE00NDMuNzMzLDQwOS42YzAsMTguODUxLTE1LjI4MiwzNC4xMzMtMzQuMTMzLDM0LjEzM3MtMzQuMTMzLTE1LjI4Mi0zNC4xMzMtMzQuMTMzdi0yNTZoNjguMjY3VjQwOS42eiIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K" />
+					</i>
+                                    </div>
+                                    <h3><a href="#">Noticias y Medios</a></h3>
+                                </div>
+                                <!--end title-->
+                                <ul>
+                                    <li><a href="">Radios</a><figure class="count">5</figure></li>
+                                    <li><a href="">Diarios</a><figure class="count">9</figure></li>
+              
+                                </ul>
+                            </div>
+                            <!--end list-item-->
+                        </div>
+                        <!--end col-md-3-->
+                    </div>
+                    <!--end row-->
+                </div>
+                <!--end categories-list-->
+    
+<hr>
+<style>
+.text-element {
+margin-bottom: 30px;
+position: relative;
+}
+.text-element.event {
+padding-left: 70px;
+padding-top: 10px;
+}
+.text-element.event .date-icon {
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+border-radius: 3px;
+border: 1px solid rgba(0, 0, 0, 0.1);
+text-align: center;
+padding: 10px 3px 10px 3px;
+position: absolute;
+width: 50px;
+left: 0;
+}
+.text-element.event .date-icon:before {
+background-image: url("../../static/assets/img/calendar-spring.png");
+width: 37px;
+height: 6px;
+position: absolute;
+top: -3px;
+left: 4px;
+content: "";
+}
+.text-element.event .date-icon .day {
+filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+opacity: 0.6;
+font-size: 20px;
+margin-bottom: 3px;
+}
+.text-element.event .date-icon .month {
+filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+opacity: 0.6;
+font-size: 12px;
+text-transform: uppercase;
+}
+.text-element a.link {
+color: #1f1f1f;
+padding-top: 10px;
+}
+.text-element .date {
+filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+opacity: 0.5;
+font-size: 12px;
+margin-bottom: 4px;
+font-weight: bold;
+}
+.text-element .date i {
+margin-right: 4px;
+padding-top: 6px;
+}
+
+
+</style>
+<div class="container-fluid">
+<div class="section-header padding-6000">
+<div class="single-list-topics-icon">
+
+<i>
+<img width="32px" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgMzk3LjA2MSAzOTcuMDYxIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAzOTcuMDYxIDM5Ny4wNjE7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxnPg0KCQk8Zz4NCgkJCTxwYXRoIGQ9Ik04Ni4yMDQsNjcuOTE4aDMxLjM0N2MxLjQ0MywwLDIuNjEyLTEuMTcsMi42MTItMi42MTJWMi42MTJjMC0xLjQ0My0xLjE2OS0yLjYxMi0yLjYxMi0yLjYxMkg4Ni4yMDQNCgkJCQljLTEuNDQzLDAtMi42MTIsMS4xNy0yLjYxMiwyLjYxMnY2Mi42OTRDODMuNTkyLDY2Ljc0OSw4NC43NjEsNjcuOTE4LDg2LjIwNCw2Ny45MTh6Ii8+DQoJCQk8cGF0aCBkPSJNMzY3LjgwNCw0Ny4wMmgtMzguNjYxdjE2LjcxOGMwLDkuOTI3LTcuMzE0LDE5Ljg1My0xNy4yNDEsMTkuODUzaC0zMC44MjRjLTEwLjYzNy0wLjc1NC0xOS4wOTktOS4yMTYtMTkuODUzLTE5Ljg1Mw0KCQkJCVY0Ny4wMkgxMzUuODM3djE2LjcxOGMtMC43NTQsMTAuNjM3LTkuMjE2LDE5LjA5OS0xOS44NTMsMTkuODUzSDg1LjE1OWMtOS45MjcsMC0xNy4yNDEtOS45MjctMTcuMjQxLTE5Ljg1M1Y0Ny4wMkgyOS4yNTcNCgkJCQlDMTUuOSw0Ny4zMDUsNS4yMjEsNTguMjE2LDUuMjI0LDcxLjU3NnY2NC4yNjFoMzg2LjYxMlY3MS41NzZDMzkxLjg0LDU4LjIxNiwzODEuMTYxLDQ3LjMwNSwzNjcuODA0LDQ3LjAyeiIvPg0KCQkJPHBhdGggZD0iTTI3OS41MSw2Ny45MThoMzEuMzQ3YzEuNDQzLDAsMi42MTItMS4xNywyLjYxMi0yLjYxMlYyLjYxMmMwLTEuNDQzLTEuMTctMi42MTItMi42MTItMi42MTJIMjc5LjUxDQoJCQkJYy0xLjQ0MywwLTIuNjEyLDEuMTctMi42MTIsMi42MTJ2NjIuNjk0QzI3Ni44OTgsNjYuNzQ5LDI3OC4wNjcsNjcuOTE4LDI3OS41MSw2Ny45MTh6Ii8+DQoJCQk8cGF0aCBkPSJNMTU5LjM0NywyOTEuNTI3bC03LjMxNCw0Mi4zMThsMzcuNjE2LTE5Ljg1M2wzLjY1Ny0xLjA0NWwzLjY1NywxLjA0NWwzNy42MTYsMTkuODUzbC03LjMxNC00Mi4zMTgNCgkJCQljLTAuMjc5LTIuNDU2LDAuNDc4LTQuOTE3LDIuMDktNi43OTJsMzAuODI1LTI5LjI1N2wtNDIuMzE4LTYuMjY5Yy0yLjQ3NC0wLjM5NS00LjYwOS0xLjk0OC01Ljc0Ny00LjE4bC0xOC44MDgtMzguMTM5DQoJCQkJbC0xOC44MDgsMzguMTM5Yy0xLjEzOCwyLjIzMi0zLjI3MywzLjc4NS01Ljc0Nyw0LjE4bC00Mi4zMTgsNi4yNjlsMzAuODI1LDI5LjI1Nw0KCQkJCUMxNTguODY5LDI4Ni42MDksMTU5LjYyNiwyODkuMDcsMTU5LjM0NywyOTEuNTI3eiIvPg0KCQkJPHBhdGggZD0iTTUuMjI0LDM3My41NTFjMC4yODQsMTMuMDY4LDEwLjk2MSwyMy41MTMsMjQuMDMzLDIzLjUxaDMzOC41NDdjMTMuMDcxLDAuMDAzLDIzLjc0OC0xMC40NDIsMjQuMDMzLTIzLjUxVjE1MS41MUg1LjIyNA0KCQkJCVYzNzMuNTUxeiBNMTAyLjQsMjQ3LjY0MWMwLjgzNC0yLjg1NCwzLjMxMi00LjkxOSw2LjI2OS01LjIyNGw1My44MTItOC4zNTlsMjQuMDMzLTQ4LjU4OGMyLjE1OS0zLjc1MSw2Ljk1MS01LjA0MSwxMC43MDItMi44ODINCgkJCQljMS4xOTgsMC42OSwyLjE5MiwxLjY4NCwyLjg4MiwyLjg4MmwyNC4wMzMsNDguNTg4bDUzLjgxMiw4LjM1OWMyLjk1NywwLjMwNSw1LjQzNiwyLjM3MSw2LjI2OSw1LjIyNA0KCQkJCWMwLjk0OCwyLjc5NSwwLjEyNCw1Ljg4NS0yLjA5LDcuODM3bC0zOC42NjEsMzcuNjE2bDkuNDA0LDUzLjgxMmMwLjM2MywyLjgyNy0wLjgzOCw1LjYyOC0zLjEzNSw3LjMxNA0KCQkJCWMtMS4zNzMsMC45ODYtMy4wMTIsMS41MzItNC43MDIsMS41NjdjLTEuMzA3LDAuMTI0LTIuNjEzLTAuMjQ5LTMuNjU3LTEuMDQ1bC00OC4wNjUtMjUuMDc4bC00OC4wNjUsMjUuMDc4DQoJCQkJYy0yLjYyLDEuNTk2LTUuOTU4LDEuMzg4LTguMzU5LTAuNTIyYy0yLjI5Ny0xLjY4Ny0zLjQ5Ny00LjQ4OC0zLjEzNS03LjMxNGw5LjQwNC01My44MTJsLTM4LjY2MS0zNy42MTYNCgkJCQlDMTAyLjI3NiwyNTMuNTI2LDEwMS40NTIsMjUwLjQzNSwxMDIuNCwyNDcuNjQxeiIvPg0KCQk8L2c+DQoJPC9nPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo=" />
+</i>
+</div>
+<h2>Actividades</h2>
+<p>Descubre próximos eventos en la ciudad</p>
+</div><!--/.section-header-->
+<!--end section-title-->
+
+<div class="eventos   owl-carousel">
+
+<div class="text-element event">
+<div class="date-icon">
+<figure class="day">01</figure>
+<figure class="month">Mayo</figure>
+</div>
+<h4><a href="detail.html">Día del Trabajador</a></h4>
+<figure class="date"><p><i class="fa fa-clock-o" aria-hidden="true"></i><b>12:00 PM</b></p></figure>
+<p>Día internacional del trabajador, compartiremos premios y sopresas</p>
+<a href="detail.html" class="link arrow">Leer Más ...</a>
+</div>
+<!--end text-element-->
+
+<div class="text-element event">
+<div class="date-icon">
+<figure class="day">9</figure>
+<figure class="month">Mayo</figure>
+</div>
+<h4><a href="detail.html">Día de la Madre</a></h4>
+<figure class="date"><p><i class="fa fa-clock-o" aria-hidden="true"></i><b>8:00 AM</b></p></figure>
+<p>Día internacional de la Madre, compartiremos premios y sopresas</p>
+<a href="detail.html" class="link arrow">Leer Más ...</a>
+</div>
+<!--end text-element-->
+<!--end col-md-4-->
+
+<!--end col-md-4-->
+<div class="text-element event">
+<div class="date-icon">
+<figure class="day">12</figure>
+<figure class="month">Abril</figure>
+</div>
+<h4><a href="detail.html">Inaguración Teatro Galía</a></h4>
+<figure class="date"><p><i class="fa fa-clock-o" aria-hidden="true"><b></i>10:00 AM</p></b></figure>
+<p>Show de inicio a la parrilla de actividades semestrales</p>
+<a href="detail.html" class="link arrow">Leer Más ...</a>
+</div>
+<!--end text-element-->
+<!--end col-md-4-->
+
+
+<div class="text-element event">
+<div class="date-icon">
+<figure class="day">33</figure>
+<figure class="month">Abril</figure>
+</div>
+<h4><a href="detail.html">Postulación Corfo</a></h4>
+<figure class="date"><p><i class="fa fa-clock-o" aria-hidden="true"><b></i>03:00 PM</p></b></figure>
+<p>Se abren nuevas postulaciones para el desarrollo</p>
+<a href="detail.html" class="link arrow">Leer Más ...</a>
+</div>
+<!--end text-element-->
+<!--end col-md-4-->
+</div>
+
+<!--end container-->
+		<script src="{% static 'assets/js/jquery.js'%}"></script>
+		<script src="{% static 'assets/js/owl.carousel.js'%}"></script>
+	<script>
+$(".eventos").owlCarousel({
+items: 4,
+margin:6,
+loop: true,
+autoplay: true,
+smartSpeed: 1800,
+nav: true,
+navText: ['', ''],
+responsive: {
+320: {
+items: 3
+},
+480: {
+items: 2
+},
+576: {
+items: 3
+},
+768: {
+items: 3
+},
+992: {
+items: 3
+},
+1200: {
+items: 3
+}
+}
+});
+</script>		
+<hr>
+<style>
+.rz-font-heading {
+    font-family: "Gothic A1", sans-serif;
+}
+
+.rz-explore {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin:0 -.75rem
+}
+
+.rz-explore .rz-explore-content {
+    position: relative;
+    flex: 1 1;
+    max-width: 100%;
+    padding:0 .75rem
+}
+
+.rz-explore .rz-explore-sidebar {
+    position: relative;
+    flex: 0 1 33.3334%;
+    max-width: 33.3334%;
+    padding:0 .75rem
+}
+
+@media (min-width: 992px) {
+    .rz-explore-style--map_x3 .rz-explore .rz-explore-sidebar {
+        flex: 0 1 50%;
+        max-width:50%
+    }
+}
+
+.rz-dynamic {
+    position:relative
+}
+
+.rz-explore-map {
+    background-color:#f9f9f9
+}
+
+.rz-explore-map.rz-map-ready {
+    height: 460px;
+    border-radius:10px
+}
+
+.rz-explore-map.rz--no-map {
+    display: flex;
+    justify-content: center;
+    align-items:center
+}
+
+.rz-map-zoom {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #222;
+    border-radius: 6px;
+    overflow: hidden;
+    z-index:1
+}
+
+@media (max-width: 1299.98px) {
+    .rz-map-zoom {
+        bottom:84px
+    }
+}
+
+@media (max-width: 991.98px) {
+    .rz-map-zoom {
+        bottom:105px
+    }
+}
+
+.rz-map-zoom .rz--zoom-in, .rz-map-zoom .rz--zoom-out {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color:#fff
+}
+
+.rz-explore-listings {
+    padding:1.5rem
+}
+
+@media (max-width: 1199.98px) {
+    .rz-explore-listings .rz-listings[data-cols] .rz-listing-item {
+        flex: 0 1 100%;
+        max-width:100%
+    }
+}
+
+@media (max-width: 991.98px) {
+    .rz-explore-listings {
+        padding:1rem
+    }
+}
+
+.rz-dynamic-map {
+    position: relative;
+    overflow:hidden
+}
+
+.rz-dynamic-map .rz-map-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: all .3s;
+    background-color: hsla(0, 0%, 100%, .3);
+    opacity: 0;
+    visibility:hidden
+}
+
+.rz-ajaxing .rz-dynamic-map .rz-map-overlay {
+    opacity: 1;
+    visibility:visible
+}
+
+.rz-dynamic-map .rz-preloader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 40px;
+    margin: -10px 0 0 -10px;
+    background-color: #fff;
+    box-shadow:0 0 0 1px rgba(0, 0, 0, .05), 0 3px 15px rgba(0, 0, 0, .15)
+}
+
+.rz-marker {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transition: transform .2s;
+    text-align: center;
+    color: #000;
+    cursor: pointer;
+    z-index: 1;
+    transform-origin:0 0 !important
+}
+
+.rz-marker.rz-marker-icon {
+    width: 38px;
+    height: 38px;
+    font-size: 19.5px;
+    border-radius:50%
+}
+
+.rz-marker.rz-marker-field, .rz-marker.rz-marker-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    box-shadow:0 0 0 1px rgba(0, 0, 0, .05), 0 3px 15px rgba(0, 0, 0, .15)
+}
+
+.rz-marker.rz-marker-field {
+    padding: 8px 13px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 50px;
+    white-space:nowrap
+}
+
+.rz-marker .rz-marker-image img {
+    vertical-align:middle
+}
+
+.rz-marker-field.rz-marker-over, .rz-marker-icon.rz-marker-over {
+    background-color: #111;
+    color:hsla(0, 0%, 100%, .95)
+}
+
+.rz-marker.rz-marker-over, .rz-marker:hover {
+    z-index: 2;
+    transform:scale(1.14) translateX(-50%) translateY(-50%)
+}
+
+.rz-marker.rz-infobox-open {
+    opacity:0
+}
+
+.rz-infobox-outer {
+    border-radius: 10px;
+    background-color: var(--bg-white);
+    box-shadow:0 8px 20px rgba(0, 0, 0, .22)
+}
+
+.rz-infobox {
+    position: relative;
+    width: 270px;
+    border-radius:10px
+}
+
+@media (max-width: 991.98px) {
+    .rz-infobox {
+        width:180px
+    }
+}
+
+.rz-infobox:after {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: rotate(45deg);
+    content: "";
+    width: 20px;
+    height: 20px;
+    margin-left: -10px;
+    background-color: var(--bg-white);
+    border-radius: 0 0 5px 0;
+    box-shadow: 8px 10px 10px rgba(0, 0, 0, .22);
+    z-index:1
+}
+
+.rz-infobox .rz-listing-review {
+    display:none
+}
+
+.rz-infobox-close {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    display: none !important;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    cursor:pointer
+}
+
+.rz-infobox-cover {
+    position:relative
+}
+
+.rz-infobox-content {
+    position: relative;
+    display: block;
+    padding: 12px 16px 16px;
+    text-decoration:none !important
+}
+
+@media (max-width: 991.98px) {
+    .rz-infobox-content {
+        padding:9px 12px
+    }
+}
+
+.rz-infobox-content .rz-listing-bottom {
+    margin:0
+}
+
+@media (max-width: 991.98px) {
+    .rz-infobox-content .rz-listing-bottom {
+        margin-bottom: 2px;
+        font-size:13px
+    }
+}
+
+.rz-infobox-content .rz-title {
+    margin-bottom: .5rem;
+    color:var(--name)
+}
+
+.rz-infobox-content .rz-title .rz--verified {
+    margin-right:.25rem
+}
+
+.rz-infobox-content .rz-listing-tagline {
+    margin:.5rem 0
+}
+
+.rz-infobox-content h4 {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 600;
+    font-family:var(--font-body)
+}
+
+@media (max-width: 991.98px) {
+    .rz-infobox-content h4 {
+        font-size: 13px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space:nowrap
+    }
+}
+
+.rz-infobox-gallery-outer {
+    position: relative;
+    height: 180px;
+    background-color: #f1f1f1;
+    border-radius: 10px 10px 0 0;
+    overflow:hidden
+}
+
+.rz-infobox-gallery {
+    opacity: 0;
+    overflow: hidden;
+    transition: opacity .3s;
+    -webkit-transition:opacity .3s
+}
+
+.rz-infobox-gallery.rz-ready {
+    opacity:1
+}
+
+.rz-infobox-gallery .rz-infobox-gallery-item {
+    width: 100%;
+    height: 180px;
+    border-radius: 0;
+    opacity: 0;
+    background-size: cover;
+    background-position: 50%;
+    transition: opacity .3s !important;
+    -webkit-transition:opacity .3s !important
+}
+
+.rz-infobox .rz-listing-image {
+    border-radius:10px 10px 0 0
+}
+
+.rz-infobox-image {
+    display:block
+}
+
+.rz-infobox-image .rz-image {
+    display: block;
+    width: 100%;
+    padding-top: 66.4%;
+    border-radius: 10px;
+    background-size: cover;
+    background-position:50%
+}
+
+.rz-listings {
+    position: relative;
+    margin: -.75rem;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap:wrap
+}
+
+@media (max-width: 991.98px) {
+    .rz-listings {
+        margin:-.5rem
+    }
+}
+
+.rz-listings .rz-listing-item {
+    flex: 0 1 33.3333%;
+    display: flex;
+    flex-direction: column;
+    max-width: 33.3333%;
+    padding:.75rem
+}
+
+@media (max-width: 991.98px) {
+    .rz-listings .rz-listing-item {
+        flex: 0 1 50%;
+        max-width: 50%;
+        padding:.5rem
+    }
+}
+
+@media (max-width: 575.98px) {
+    .rz-listings .rz-listing-item {
+        flex: 0 1 100%;
+        max-width:100%
+    }
+}
+
+.rz-listings .rz-listing-item > a {
+    height: 100%
+
+}
+
+.rz-listings[data-cols="1"] .rz-listing-item {
+    flex: 0 1 100%;
+    max-width: 100%
+}
+
+.rz-listings[data-cols="2"] .rz-listing-item {
+    flex: 0 1 50%;
+    max-width:50%
+}
+
+@media (max-width: 575.98px) {
+    .rz-listings[data-cols="2"] .rz-listing-item {
+        flex: 0 1 100%;
+        max-width: 100%
+    }
+}
+
+.rz-listings[data-cols="3"] .rz-listing-item {
+    flex: 0 1 33.3333%;
+    max-width:33.3333%
+}
+
+@media (max-width: 991.98px) {
+    .rz-listings[data-cols="3"] .rz-listing-item {
+        flex: 0 1 50%;
+        max-width:50%
+    }
+}
+
+@media (max-width: 575.98px) {
+    .rz-listings[data-cols="3"] .rz-listing-item {
+        flex: 0 1 100%;
+        max-width: 100%
+    }
+}
+
+.rz-listings[data-cols="4"] .rz-listing-item {
+    flex: 0 1 25%;
+    max-width:25%
+}
+
+@media (max-width: 991.98px) {
+    .rz-listings[data-cols="4"] .rz-listing-item {
+        flex: 0 1 50%;
+        max-width:50%
+    }
+}
+
+@media (max-width: 575.98px) {
+    .rz-listings[data-cols="4"] .rz-listing-item {
+        flex: 0 1 100%;
+        max-width: 100%
+    }
+}
+
+.rz-listings[data-cols="5"] .rz-listing-item {
+    flex: 0 1 20%;
+    max-width:20%
+}
+
+@media (max-width: 991.98px) {
+    .rz-listings[data-cols="5"] .rz-listing-item {
+        flex: 0 1 50%;
+        max-width:50%
+    }
+}
+
+@media (max-width: 575.98px) {
+    .rz-listings[data-cols="5"] .rz-listing-item {
+        flex: 0 1 100%;
+        max-width: 100%
+    }
+}
+
+.rz-listings[data-cols="6"] .rz-listing-item {
+    flex: 0 1 16.6666%;
+    max-width:16.6666%
+}
+
+@media (max-width: 991.98px) {
+    .rz-listings[data-cols="6"] .rz-listing-item {
+        flex: 0 1 50%;
+        max-width:50%
+    }
+}
+
+@media (max-width: 575.98px) {
+    .rz-listings[data-cols="6"] .rz-listing-item {
+        flex: 0 1 100%;
+        max-width:100%
+    }
+}
+
+.rz-listings .rz-listing-space {
+    flex: 0 1 100% !important;
+    max-width:100% !important
+}
+
+.rz-listing {
+    transition: opacity .2s;
+    flex:1
+}
+
+.rz-ajaxing .rz-listing {
+    opacity:.7
+}
+
+.rz-listing a {
+    text-decoration:none
+}
+
+.rz-listing .rz--heading {
+    display:flex
+}
+
+.rz-listing .rz--heading .rz--main {
+    flex:1
+}
+
+.rz-listing .rz--heading .rz--review {
+    white-space: nowrap;
+    margin-left: 2rem;
+    text-align:right
+}
+
+.rz-listing .rz-title .rz--verified {
+    margin-right: 5px;
+    font-size:15px
+}
+
+.rz-listing .rz-title h4 {
+    max-height: 3rem;
+    overflow: hidden;
+    font-size: 15px;
+    font-weight: 600;
+    margin:0 0 .5rem
+}
+
+.rz-listing .rz-listing-review {
+    font-size: 15px;
+    font-weight:700
+}
+
+.rz-listing.rz-cover--author, .rz-listing.rz-cover--none {
+    border: 1px solid hsla(0, 0%, 64.7%, .4);
+    padding: 1.25rem;
+    border-radius:10px
+}
+
+.rz-listing-author {
+    display: flex;
+    border-bottom: 1px solid hsla(0, 0%, 74.5%, .4);
+    padding-bottom: 1.25rem;
+    margin-bottom:1.25rem
+}
+
+.rz-listing-author .rz--image {
+    flex: 0 1 40px;
+    max-width: 40px;
+    margin-right:1rem
+}
+
+.rz-listing-author .rz--image img {
+    border-radius:50%
+}
+
+.rz-listing-author .rz--name {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content:center
+}
+
+.rz-listing-image {
+    border-radius: 10px;
+    overflow:hidden
+}
+
+.rz-listing-gallery {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left:0
+}
+
+.rz-listing-gallery.rz-ready {
+    display:block
+}
+
+.rz-listing-geo {
+    margin: 0 0 .5rem;
+    font-size:14px
+}
+
+.rz-listing-tagline {
+    margin: 1rem 0;
+    opacity: .6;
+    font-size:14px
+}
+
+.rz-listing-cover {
+    position: relative;
+    margin-bottom:1rem
+}
+
+.rz-listing-cover .rz-listing-cover-inner {
+    position: relative;
+    box-shadow: -3px 3px 14px rgba(0, 0, 0, .1);
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 2;
+    transition:all .2s
+}
+
+.rz-ajaxing .rz-listing-cover .rz-listing-cover-inner {
+    opacity:.5
+}
+
+.rz-listing-cover:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #f6f6f6;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index:1
+}
+
+.rz-listing-image {
+    position: relative;
+    display:block
+}
+
+.rz-listing-image .rz-image {
+    display: block;
+    width: 100%;
+    padding-top: 66.4%;
+    background-size: cover;
+    background-position: 50%;
+    text-indent: -9999px;
+    font-size:0
+}
+
+.rz-listing-content {
+    display: block;
+    color:inherit
+}
+
+.rz-listing-gallery .rz-listing-gallery-item {
+    transition: opacity .3s;
+    width: 100%;
+    padding-top: 66.4%;
+    opacity: 0;
+    background-size: cover;
+    background-position:50%
+}
+
+.rz-slider {
+    visibility:hidden
+}
+
+.rz-slider.rz-ready {
+    visibility:visible
+}
+
+.rz-slider-nav {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 80px;
+    opacity: 0;
+    visibility:hidden
+}
+
+.rz-infobox:hover .rz-slider-nav, .rz-listing:hover .rz-slider-nav {
+    opacity: 1;
+    visibility:visible
+}
+
+@media (max-width: 767.98px) {
+    .rz-slider-nav {
+        opacity: 1;
+        visibility:visible
+    }
+}
+
+.rz-slider-nav span {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all .3s;
+    width: 28px;
+    height: 28px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow:0 2px 4px rgba(0, 0, 0, .18);
+        font-family: "Gothic A1", sans-serif;
+
+}
+
+.rz-slider-nav span i {
+    line-height: 28px;
+    font-size: 13px;
+    color:#000;
+        font-family: "Gothic A1", sans-serif;
+
+}
+
+.rz-slider-nav.rz-nav-prev {
+    left: 0;
+    background:linear-gradient(270deg, transparent 0, rgba(0, 0, 0, .25))
+}
+
+.rz-slider-nav.rz-nav-prev span {
+    left:10px
+}
+
+.rz-slider-nav.rz-nav-prev span i {
+    margin-left:-1px
+}
+
+.rz-slider-nav.rz-nav-next {
+    right: 0;
+    background:linear-gradient(90deg, transparent 0, rgba(0, 0, 0, .25))
+}
+
+.rz-slider-nav.rz-nav-next span {
+    right:10px
+}
+
+.rz-slider-nav.rz-nav-next span i {
+    margin-left:1px
+}
+
+.flickity-viewport {
+    transition: none !important;
+    -webkit-transition:none !important
+}
+
+.flickity-button:disabled {
+    pointer-events:auto
+}
+
+.rz-listing-details {
+    margin-top: 7px;
+    padding-top: 2px;
+    border-top: 1px solid hsla(0, 0%, 74.5%, .4);
+    pointer-events:none
+}
+
+.rz-listing-details ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 5px -6px;
+    list-style: none;
+    font-size:13px
+}
+
+.rz-listing-details ul li {
+    margin: 5px 6px;
+    vertical-align:middle
+}
+
+.rz-listing-details ul li span {
+    display: block;
+    color:#aaa;
+        font-family: "Gothic A1", sans-serif;
+
+}
+
+.rz-listing-details ul li i {
+    margin-right:5px;
+        font-family: "Gothic A1", sans-serif;
+
+}
+
+.rz-listing-bottom {
+    margin: 9px 0 0;
+    font-size: 14px;
+    font-family: "Gothic A1", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color:var(--main)
+}
+
+.rz-listing-bottom ul {
+    margin: 0 -3px;
+    list-style:none
+}
+
+.rz-listing-bottom li {
+    margin:0 3px;
+       font-family: "Gothic A1", sans-serif;
+}
+
+.rz-listing-bottom i {
+    min-width: 17px;
+    margin-right:.35rem
+}
+
+.rz-listing-priority {
+    margin: 0 -5px 1.25rem;
+    font-size:14px
+}
+
+.rz-listing-priority .rz--tag {
+    display: inline-block;
+    padding: 0 11px;
+    margin: 0 5px;
+    background-color: #ffe2ee;
+    color: #e45065;
+    font-size: 13px;
+    font-weight: 800;
+    border-radius: 50px;
+    line-height:27px
+}
+
+.rz-cover--image .rz-listing-priority, .rz-cover--slider .rz-listing-priority, .rz-infobox-cover .rz-listing-priority {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    margin:0 -5px
+}
+
+.rz-listing-badges {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0 -5px;
+    display: flex;
+    align-items: center;
+    white-space:nowrap
+}
+
+.rz-listing-badges li {
+    margin:0 5px;
+        font-family: "Gothic A1", sans-serif;
+
+}
+
+.rz-listing-badges * {
+    line-height: 25px;
+    vertical-align:middle
+}
+
+.rz-listing-review {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    pointer-events: none;
+    font-weight: 600;
+    color:var(--main)
+}
+
+.rz-listing-review i {
+    margin-right: 5px;
+    font-size:11px
+}
+
+.rz-listing-favorite {
+    position: relative;
+    font-size: 21px;
+    color:#fff
+}
+
+.rz-listing-favorite i:after {
+    position: absolute;
+    right: 0;
+    transition: all .3s;
+    content: "\F004";
+    opacity: 0;
+    font-weight: 900;
+    color:#fff
+}
+
+.rz-listing-favorite.rz-active, .rz-listing-favorite:hover {
+    color:var(--main)
+}
+
+.rz-listing-favorite.rz-active i:after {
+    opacity: 1;
+    color:var(--main)
+}
+
+.rz-listing-favorite.rz-ajaxing {
+    color:var(--main)
+}
+
+.rz-listing-favorite.rz-ajaxing i:after {
+    opacity:0
+}
+
+.rz-listing-footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 8px 0;
+    list-style: none;
+    font-size: 13px;
+    border-left: 1px solid #ddd;
+    border-top:1px solid #ddd
+}
+
+.rz-listing-footer ul li {
+    position: relative;
+    flex: 1 1 50%;
+    border: 1px solid #ddd;
+    border-left: 0;
+    border-top:0;
+        font-family: "Gothic A1", sans-serif;
+
+}
+
+.rz-listing-footer ul li > span, .rz-listing-footer ul li a {
+    position: relative;
+    display: block;
+    padding:5px 8px;
+        font-family: "Gothic A1", sans-serif;
+
+}
+
+.rz-listing-footer .rz-is-more > a {
+    padding-right:29px;
+        font-family: "Gothic A1", sans-serif;
+}
+
+.rz-listing-footer ul li a > span {
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 8px;
+    border-radius:50%;
+        font-family: "Gothic A1", sans-serif;
+
+}
+
+.rz-summary {
+    margin-top: 15px;
+    font-size:13px
+}
+
+.rz-explore-mods .rz-mod {
+    margin:0 0 35px
+}
+
+.rz-explore-mods .rz-mod:last-child {
+    margin-bottom:0
+}
+
+.rz-search-mods > .rz-mod {
+    min-width: 0
+}
+
+.rz-search-filter .rz-mod[data-col="12"] {
+    flex: 0 1 100%;
+    max-width: 100%
+}
+
+.rz-search-filter .rz-mod[data-col="6"] {
+    flex: 0 1 50%;
+    max-width: 50%
+}
+
+.rz-search-filter .rz-mod[data-col="4"] {
+    flex: 0 1 33.3333%;
+    max-width: 33.3333%
+}
+
+.rz-search-filter .rz-mod[data-col="3"] {
+    flex: 0 1 25%;
+    max-width: 25%
+}
+
+.rz-search-filter .rz-mod[data-col="2"] {
+    flex: 0 1 16.6666%;
+    max-width:16.6666%
+}
+
+.rz-search-filter .rz-mod[data-col=auto] {
+    flex: 0;
+    max-width:100%
+}
+
+@media (max-width: 1199.98px) {
+    .rz-search-filter .rz-mod[data-col="12"] {
+        flex: 0 1 100%;
+        max-width: 100%
+    }
+
+    .rz-search-filter .rz-mod[data-col="3"], .rz-search-filter .rz-mod[data-col="4"], .rz-search-filter .rz-mod[data-col="6"] {
+        flex: 0 1 50%;
+        max-width:50%
+    }
+}
+
+@media (max-width: 575.98px) {
+    .rz-search-filter .rz-mod[data-col] {
+        flex: 0 1 100%;
+        max-width:100%
+    }
+}
+
+.rz-filter-tab {
+    position:relative
+}
+
+.rz-filter-tab .rz-tab-title {
+    position: relative;
+    transition: all .3s;
+    padding: 0 40px 0 15px;
+    line-height: 41px;
+    background-color: var(--field-bg);
+    border-radius: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: top;
+    cursor:pointer;
+        font-family: "Gothic A1", sans-serif;
+
+}
+
+.rz-filter-tab .rz-tab-title:after {
+    content: "";
+    display: block;
+    position: absolute;
+    content: "\F107";
+    font-family: Font Awesome\ 5 Free;
+    font-weight: 600;
+    line-height: 20px;
+    font-size: 20px;
+    top: 50%;
+    margin-top: -10px;
+    right: 1rem;
+    pointer-events:none
+}
+
+.rz-filter-tab .rz-tab-title > span {
+    white-space:none
+}
+
+.rz-filter-tab .rz-tab-title.rz-is-placeholder span {
+    color:var(--field-text)
+}
+
+.rz-filter-tab .rz-tab-title ul {
+    display: inline;
+    margin: 0;
+    padding:0
+}
+
+.rz-filter-tab .rz-tab-title ul li {
+    display: inline;
+    font-weight:600;
+        font-family: "Gothic A1", sans-serif;
+
+}
+
+.rz-filter-tab .rz-tab-title ul li:after {
+    content: "/";
+    display: inline-block;
+    margin:0 5px
+}
+
+.rz-filter-tab .rz-tab-title ul li:last-child:after {
+    content:none
+}
+
+.rz-filter-tab .rz-tab-title ul li span {
+    margin-right:4px;
+        font-family: "Gothic A1", sans-serif;
+
+}
+
+.rz-filter-tab .rz-tab-flyout {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    min-width: 300px;
+    max-width: 372px;
+    margin-top: 1rem;
+    background-color: #fff;
+    border-top: 1px solid #eee;
+    border-radius: 10px;
+    box-shadow: 0 3px 16px 0 rgba(0, 0, 0, .1);
+    z-index:90
+}
+
+@media (max-width: 991.98px) {
+    .rz-filter-tab .rz-tab-flyout {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 64px;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        max-width: none;
+        margin-top: 0;
+        border-radius: 0;
+        box-shadow: none;
+        overflow-y:auto
+    }
+
+    .rz-filter-tab .rz-tab-flyout .rz-tab-footer {
+        margin-top: auto;
+        border-top:1px solid var(--border)
+    }
+}
+
+.rz-filter-tab .rz-tab-flyout .rz-tab-content {
+    padding: 1.25rem;
+    max-height: 50vh;
+    overflow-y:auto
+}
+
+@media (max-width: 991.98px) {
+    .rz-filter-tab .rz-tab-flyout .rz-tab-content {
+        max-height: none;
+        padding:1rem
+    }
+
+    .rz-filter-tab .rz-tab-flyout .rz-tab-content > .rz-grid {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items:center
+    }
+
+    .rz-filter-tab .rz-tab-flyout .rz-tab-content > .rz-grid > .rz-mod {
+        max-width:440px
+    }
+}
+
+.rz-filter-tab .rz-tab-flyout .rz-tab-content > .rz-grid > .rz-mod:last-child .rz-form-group {
+    margin-bottom:0
+}
+
+.rz-filter-tab .rz-tab-flyout .rz-tab-footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem 1.25rem;
+    border-top:1px solid #eee
+}
+
+@media (max-width: 991.98px) {
+    .rz-filter-tab .rz-tab-flyout .rz-tab-footer {
+        padding:1rem
+    }
+
+    .rz-filter-tab .rz-tab-flyout .rz-tab-footer > * {
+        flex:1
+    }
+}
+
+@media (max-width: 991.98px) {
+    .rz-filter-tab .rz-tab-flyout .rz-tab-footer .rz-button {
+        width:100%
+    }
+}
+
+.rz-filter-tab .rz-tab-flyout .rz-tab-footer .rz-clear {
+    text-decoration: none;
+    font-weight:600
+}
+
+.rz-filter-tab.rz-expand .rz-tab-title:after {
+    transform:rotate(180deg)
+}
+
+.rz-filter-tab.rz-expand .rz-tab-flyout {
+    opacity: 1;
+    visibility:visible
+}
+
+.rz-more-filters {
+    margin-left:1rem
+}
+
+@media (max-width: 991.98px) {
+    .rz-more-filters {
+        margin-left:0
+    }
+}
+
+.rz-more-filters .rz--active {
+    display: inline-block;
+    min-width: 24px;
+    height: 24px;
+    line-height: 24px;
+    padding: 0 8px;
+    margin-left: .5rem;
+    background: linear-gradient(90deg, var(--main), var(--main-shade));
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 50px;
+    vertical-align:top
+}
+
+.rz-filter-heading .rz--heading {
+    font-size: 19px;
+    font-weight:600
+}
+
+@media (max-width: 767.98px) {
+    .rz-filter-heading .rz--heading {
+        font-size:17px
+    }
+}
+
+.rz-filter-separator {
+    display: block;
+    height: 1px;
+    margin: .75rem 0 1.5rem;
+    background-color:var(--border)
+}
+
+.rz--expand-search-filters {
+    overflow-y:hidden
+}
+
+.rz-search-filter--inline {
+    border-bottom:1px solid var(--border)
+}
+
+@media (max-width: 991.98px) {
+    .rz--expand-search-filters .rz-search-filter--inline {
+        bottom: 64px;
+        background-color:#fff
+    }
+
+    .rz--expand-search-filters .rz-search-filter--inline .rz--content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        overflow-y:auto
+    }
+}
+
+.rz--expand-search-filters .rz-search-filter--inline .rz--icon-filters i:before {
+    content: "\F00D"
+}
+
+@media (max-width: 991.98px) {
+    .rz-search-filter--inline {
+        border-bottom:0
+    }
+
+    .rz-search-filter--inline .rz--content {
+        display:none
+    }
+}
+
+@media (max-width: 991.98px) {
+    .rz-search-filter--inline {
+        display: flex;
+        flex-direction:column
+    }
+}
+
+.rz-search-filter--inline .rz-search-filter-inner {
+    padding:1rem 1.5rem 0
+}
+
+@media (max-width: 991.98px) {
+    .rz-search-filter--inline .rz-search-filter-inner {
+        padding:1rem
+    }
+}
+
+.rz-search-filter--inline .rz-search-footer {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding:0 1.5rem 1.5rem
+}
+
+@media (max-width: 991.98px) {
+    .rz-search-filter--inline .rz-search-footer {
+        padding: 1rem;
+        margin:auto 0 0
+    }
+
+    .rz-search-filter--inline .rz-search-footer .rz--submit {
+        flex: 0 1 100%;
+        order: 2;
+        margin-top:1rem
+    }
+
+    .rz-search-filter--inline .rz-search-footer .rz--submit .rz-button {
+        width:100%
+    }
+}
+
+.rz-search-filter--inline .rz-search-footer .rz-button {
+    padding: 10px 20px;
+    font-size: 15px;
+    line-height:21px
+}
+
+@media (max-width: 991.98px) {
+    .rz-search-filter--inline .rz-search-footer > * {
+        padding:0
+    }
+}
+
+.rz-dynamic-form {
+    position:relative
+}
+
+.rz-dynamic-form .rz-search-form-replace {
+    transition:all .3s
+}
+
+.rz-dynamic-form.rz-ajaxing .rz-search-form-replace {
+    opacity:.4
+}
+
+.rz-favorites-list ul {
+    list-style: none;
+    padding: 0;
+    margin:0
+}
+
+.rz-favorites-list ul li {
+    display: flex;
+    align-items: center;
+    margin:0 0 1.5rem
+  ;
+      font-family: "Gothic A1", sans-serif;
+
+}
+
+.rz-favorites-list ul li:last-child {
+    margin-bottom:0
+}
+
+.rz-favorites-list ul li .rz--image {
+    flex: 0 1 70px;
+    max-width:70px
+}
+
+.rz-favorites-list ul li .rz--image .rz-dummy-image {
+    border-radius:50%
+}
+
+.rz-favorites-list ul li .rz--image .rz-dummy-image i {
+    font-size:19px
+}
+
+.rz-favorites-list ul li .rz--image img {
+    width: 100%;
+    border-radius: 50%;
+    vertical-align:top
+}
+
+.rz-favorites-list ul li .rz--content {
+    flex: 1;
+    padding-left: 1.5rem;
+    overflow:hidden
+}
+
+.rz-favorites-list ul li .rz--content .rz--title {
+    margin: 0 0 4px;
+    font-size:15px
+}
+
+.rz-favorites-list ul li .rz--content .rz--title a {
+    color: #000;
+    text-decoration:none
+}
+
+.rz-favorites-list ul li .rz--action {
+    flex: 0 1;
+    padding-left:1.5rem
+}
+
+.rz-favorites-list ul li .rz--action .rz-remove {
+    transition: all .3s;
+    display: block;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    background-color: #f1f1f1;
+    color: #000;
+    text-align: center;
+    border-radius:50%
+}
+
+@media (min-width: 1025px) {
+    .rz-favorites-list ul li .rz--action .rz-remove:hover {
+        background-color: #f67884;
+        color: #fff
+    }
+}
+
+
+
+	</style>
+<section class="container-fluid" >
+
+				 <div class="section-title padding-6000">
+				<div class="section-header">
+					<i>
+<img width="32px" src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIC0zMSA1MTIgNTEyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Im0yMTEgMjQwaDkwdjMwaC05MHptMCAwIi8+PHBhdGggZD0ibTQxNS4zNzg5MDYgMjcwaC04NC4zNzg5MDZ2MTVjMCA4LjI4OTA2Mi02LjcxMDkzOCAxNS0xNSAxNWgtMTIwYy04LjI4OTA2MiAwLTE1LTYuNzEwOTM4LTE1LTE1di0xNWgtODQuMzc4OTA2Yy0xOS4zOTQ1MzIgMC0zNi41NDY4NzUtMTIuMzYzMjgxLTQyLjY4NzUtMzAuNzYxNzE5bC01My45MzM1OTQtMTYxLjgyODEyNXYzMjcuNTg5ODQ0YzAgMjQuODEyNSAyMC4xODc1IDQ1IDQ1IDQ1aDQyMmMyNC44MTI1IDAgNDUtMjAuMTg3NSA0NS00NXYtMzI3LjU3ODEyNWwtNTMuOTM3NSAxNjEuODE2NDA2Yy02LjEzNjcxOSAxOC4zOTg0MzgtMjMuMjg5MDYyIDMwLjc2MTcxOS00Mi42ODM1OTQgMzAuNzYxNzE5em0wIDAiLz48cGF0aCBkPSJtMzE2IDBoLTEyMGMtMjQuODEyNSAwLTQ1IDIwLjE4NzUtNDUgNDV2MTVoLTEyNS4xOTE0MDZsNTYuNTc0MjE4IDE2OS43NDYwOTRjMi4wNTA3ODIgNi4xMzY3MTggNy43NzczNDQgMTAuMjUzOTA2IDE0LjIzODI4MiAxMC4yNTM5MDZoODQuMzc4OTA2di0xNWMwLTguMjg5MDYyIDYuNzEwOTM4LTE1IDE1LTE1aDEyMGM4LjI4OTA2MiAwIDE1IDYuNzEwOTM4IDE1IDE1djE1aDg0LjM3ODkwNmM2LjQ2MDkzOCAwIDEyLjE4NzUtNC4xMTcxODggMTQuMjM4MjgyLTEwLjI1MzkwNmw1Ni41NzgxMjQtMTY5Ljc0NjA5NGgtMTI1LjE5NTMxMnYtMTVjMC0yNC44MTI1LTIwLjE4NzUtNDUtNDUtNDV6bS0xMzUgNjB2LTE1YzAtOC4yNzczNDQgNi43MjI2NTYtMTUgMTUtMTVoMTIwYzguMjc3MzQ0IDAgMTUgNi43MjI2NTYgMTUgMTV2MTV6bTAgMCIvPjwvc3ZnPg==" />
+
+					</i>
+					<h2>Empleos</h2>
+					<p>El trabajo ideal al precio perfecto </p>
+				</div><!--/.section-header-->
+                </div>
+<div class="elementor-container elementor-column-gap-no">
+<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-14b6c32b" data-id="14b6c32b" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-591ada35 elementor-widget elementor-widget-brk-listings" data-id="591ada35" data-element_type="widget" data-widget_type="brk-listings.default">
+<div class="elementor-widget-container">
+<section class="brk-section brk-elementor-row">
+<div class="brk-flex--full brk-justify-center">
+<div class="brk-listings">
+<ul class="rz-listings" data-cols="5">
+<li class="rz-listing-item">
+<div class="rz-listing rz--normal rz-cover--author" data-id="2440" data-priority="0">
+<div class="rz-listing-author">
+<div class="rz--image">
+<div class=""><i class="material-icon-person">
+	<img width="16px" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE2LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgd2lkdGg9IjQ1LjUzMnB4IiBoZWlnaHQ9IjQ1LjUzMnB4IiB2aWV3Qm94PSIwIDAgNDUuNTMyIDQ1LjUzMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDUuNTMyIDQ1LjUzMjsiDQoJIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPHBhdGggZD0iTTIyLjc2NiwwLjAwMUMxMC4xOTQsMC4wMDEsMCwxMC4xOTMsMCwyMi43NjZzMTAuMTkzLDIyLjc2NSwyMi43NjYsMjIuNzY1YzEyLjU3NCwwLDIyLjc2Ni0xMC4xOTIsMjIuNzY2LTIyLjc2NQ0KCQlTMzUuMzQsMC4wMDEsMjIuNzY2LDAuMDAxeiBNMjIuNzY2LDYuODA4YzQuMTYsMCw3LjUzMSwzLjM3Miw3LjUzMSw3LjUzYzAsNC4xNTktMy4zNzEsNy41My03LjUzMSw3LjUzDQoJCWMtNC4xNTgsMC03LjUyOS0zLjM3MS03LjUyOS03LjUzQzE1LjIzNywxMC4xOCwxOC42MDgsNi44MDgsMjIuNzY2LDYuODA4eiBNMjIuNzYxLDM5LjU3OWMtNC4xNDksMC03Ljk0OS0xLjUxMS0xMC44OC00LjAxMg0KCQljLTAuNzE0LTAuNjA5LTEuMTI2LTEuNTAyLTEuMTI2LTIuNDM5YzAtNC4yMTcsMy40MTMtNy41OTIsNy42MzEtNy41OTJoOC43NjJjNC4yMTksMCw3LjYxOSwzLjM3NSw3LjYxOSw3LjU5Mg0KCQljMCwwLjkzOC0wLjQxLDEuODI5LTEuMTI1LDIuNDM4QzMwLjcxMiwzOC4wNjgsMjYuOTExLDM5LjU3OSwyMi43NjEsMzkuNTc5eiIvPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo=" />
+</i></div> </div>
+<div class="rz--name">
+Alan Brito 
+</div>
+</div>
+<a class="rz-listing-content" href="">
+<div class="rz--heading">
+<div class="rz--main">
+<div class="rz-title">
+<h4>
+Desarrollo de Software </h4>
+</div>
+<div class="rz-listing-tagline">
+Remoto </div>
+</div>
+</div>
+<div class="rz-listing-details rz-listing-details-content">
+<ul>
+<li>
+<span>
+Gerente de proyecto </span>
+</li>
+<li>
+<span>
+Desarrollador iOS</span>
+</li>
+<li>
+<span>
+Gerente QA </span>
+</li>
+<li>
+<span>
+Aquitecto de Diseño </span>
+</li>
+</ul>
+</div>
+<div class="rz-listing-bottom">
+<ul>
+<li>
+<span>
+$2.690.000 <br> al Mes </span>
+</li>
+</ul>
+</div>
+</a>
+</div>
+
+</li>
+<li class="rz-listing-item">
+<div class="rz-listing rz--promoted rz-cover--author" data-id="2439" data-priority="2">
+<div class="rz-listing-author">
+<div class="rz--image">
+<div class="rz-avatar-placeholder">
+<i class="material-icon-person">
+	<img width="16px" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE2LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgd2lkdGg9IjQ1LjUzMnB4IiBoZWlnaHQ9IjQ1LjUzMnB4IiB2aWV3Qm94PSIwIDAgNDUuNTMyIDQ1LjUzMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDUuNTMyIDQ1LjUzMjsiDQoJIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPHBhdGggZD0iTTIyLjc2NiwwLjAwMUMxMC4xOTQsMC4wMDEsMCwxMC4xOTMsMCwyMi43NjZzMTAuMTkzLDIyLjc2NSwyMi43NjYsMjIuNzY1YzEyLjU3NCwwLDIyLjc2Ni0xMC4xOTIsMjIuNzY2LTIyLjc2NQ0KCQlTMzUuMzQsMC4wMDEsMjIuNzY2LDAuMDAxeiBNMjIuNzY2LDYuODA4YzQuMTYsMCw3LjUzMSwzLjM3Miw3LjUzMSw3LjUzYzAsNC4xNTktMy4zNzEsNy41My03LjUzMSw3LjUzDQoJCWMtNC4xNTgsMC03LjUyOS0zLjM3MS03LjUyOS03LjUzQzE1LjIzNywxMC4xOCwxOC42MDgsNi44MDgsMjIuNzY2LDYuODA4eiBNMjIuNzYxLDM5LjU3OWMtNC4xNDksMC03Ljk0OS0xLjUxMS0xMC44OC00LjAxMg0KCQljLTAuNzE0LTAuNjA5LTEuMTI2LTEuNTAyLTEuMTI2LTIuNDM5YzAtNC4yMTcsMy40MTMtNy41OTIsNy42MzEtNy41OTJoOC43NjJjNC4yMTksMCw3LjYxOSwzLjM3NSw3LjYxOSw3LjU5Mg0KCQljMCwwLjkzOC0wLjQxLDEuODI5LTEuMTI1LDIuNDM4QzMwLjcxMiwzOC4wNjgsMjYuOTExLDM5LjU3OSwyMi43NjEsMzkuNTc5eiIvPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo=" />
+</i>
+</div> </div>
+<div class="rz--name">
+Marlene Cortez </div>
+</div>
+<a class="rz-listing-content" href="">
+<div class="rz--heading">
+<div class="rz--main">
+<div class="rz-title">
+<h4>
+SuperMercado ISEK</h4>
+</div>
+<div class="rz-listing-tagline">
+Presencial </div>
+</div>
+</div>
+<div class="rz-listing-priority">
+<span class="rz--tag">
+Pagado </span>
+</div>
+<div class="rz-listing-details rz-listing-details-content">
+<ul>
+<li>
+<span>
+Panadero JR </span>
+</li>
+
+</ul>
+</div>
+<div class="rz-listing-bottom">
+<ul>
+<li>
+<span>
+$500.000 <br> al Mes</span>
+</li>
+</ul>
+</div>
+</a>
+</div>
+</li>
+<li class="rz-listing-item">
+<div class="rz-listing rz--normal rz-cover--author" data-id="2438" data-priority="0">
+<div class="rz-listing-author">
+<div class="rz--image">
+<div class="rz-avatar-placeholder">
+	<i class="material-icon-person">
+	<img width="16px" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE2LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgd2lkdGg9IjQ1LjUzMnB4IiBoZWlnaHQ9IjQ1LjUzMnB4IiB2aWV3Qm94PSIwIDAgNDUuNTMyIDQ1LjUzMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDUuNTMyIDQ1LjUzMjsiDQoJIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPHBhdGggZD0iTTIyLjc2NiwwLjAwMUMxMC4xOTQsMC4wMDEsMCwxMC4xOTMsMCwyMi43NjZzMTAuMTkzLDIyLjc2NSwyMi43NjYsMjIuNzY1YzEyLjU3NCwwLDIyLjc2Ni0xMC4xOTIsMjIuNzY2LTIyLjc2NQ0KCQlTMzUuMzQsMC4wMDEsMjIuNzY2LDAuMDAxeiBNMjIuNzY2LDYuODA4YzQuMTYsMCw3LjUzMSwzLjM3Miw3LjUzMSw3LjUzYzAsNC4xNTktMy4zNzEsNy41My03LjUzMSw3LjUzDQoJCWMtNC4xNTgsMC03LjUyOS0zLjM3MS03LjUyOS03LjUzQzE1LjIzNywxMC4xOCwxOC42MDgsNi44MDgsMjIuNzY2LDYuODA4eiBNMjIuNzYxLDM5LjU3OWMtNC4xNDksMC03Ljk0OS0xLjUxMS0xMC44OC00LjAxMg0KCQljLTAuNzE0LTAuNjA5LTEuMTI2LTEuNTAyLTEuMTI2LTIuNDM5YzAtNC4yMTcsMy40MTMtNy41OTIsNy42MzEtNy41OTJoOC43NjJjNC4yMTksMCw3LjYxOSwzLjM3NSw3LjYxOSw3LjU5Mg0KCQljMCwwLjkzOC0wLjQxLDEuODI5LTEuMTI1LDIuNDM4QzMwLjcxMiwzOC4wNjgsMjYuOTExLDM5LjU3OSwyMi43NjEsMzkuNTc5eiIvPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo=" />
+</i>
+</div> </div>
+<div class="rz--name">
+German Torres </div>
+</div>
+<a class="rz-listing-content" href="">
+<div class="rz--heading">
+<div class="rz--main">
+<div class="rz-title">
+<h4>
+Forestal Arauco</h4>
+</div>
+<div class="rz-listing-tagline">
+Part-time </div>
+</div>
+</div>
+<div class="rz-listing-details rz-listing-details-content">
+<ul>
+
+<li>
+<span>
+Conductor de Grua </span>
+</li>
+
+</ul>
+</div>
+<div class="rz-listing-bottom">
+<ul>
+<li>
+<span>
+1.000.000 <br>al Mes </span>
+</li>
+</ul>
+</div>
+</a>
+</div>
+</li>
+<li class="rz-listing-item">
+<div class="rz-listing rz--normal rz-cover--author" data-id="2438" data-priority="0">
+<div class="rz-listing-author">
+<div class="rz--image">
+<div class="rz-avatar-placeholder">
+	<i class="material-icon-person">
+	<img width="16px" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE2LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgd2lkdGg9IjQ1LjUzMnB4IiBoZWlnaHQ9IjQ1LjUzMnB4IiB2aWV3Qm94PSIwIDAgNDUuNTMyIDQ1LjUzMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDUuNTMyIDQ1LjUzMjsiDQoJIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPHBhdGggZD0iTTIyLjc2NiwwLjAwMUMxMC4xOTQsMC4wMDEsMCwxMC4xOTMsMCwyMi43NjZzMTAuMTkzLDIyLjc2NSwyMi43NjYsMjIuNzY1YzEyLjU3NCwwLDIyLjc2Ni0xMC4xOTIsMjIuNzY2LTIyLjc2NQ0KCQlTMzUuMzQsMC4wMDEsMjIuNzY2LDAuMDAxeiBNMjIuNzY2LDYuODA4YzQuMTYsMCw3LjUzMSwzLjM3Miw3LjUzMSw3LjUzYzAsNC4xNTktMy4zNzEsNy41My03LjUzMSw3LjUzDQoJCWMtNC4xNTgsMC03LjUyOS0zLjM3MS03LjUyOS03LjUzQzE1LjIzNywxMC4xOCwxOC42MDgsNi44MDgsMjIuNzY2LDYuODA4eiBNMjIuNzYxLDM5LjU3OWMtNC4xNDksMC03Ljk0OS0xLjUxMS0xMC44OC00LjAxMg0KCQljLTAuNzE0LTAuNjA5LTEuMTI2LTEuNTAyLTEuMTI2LTIuNDM5YzAtNC4yMTcsMy40MTMtNy41OTIsNy42MzEtNy41OTJoOC43NjJjNC4yMTksMCw3LjYxOSwzLjM3NSw3LjYxOSw3LjU5Mg0KCQljMCwwLjkzOC0wLjQxLDEuODI5LTEuMTI1LDIuNDM4QzMwLjcxMiwzOC4wNjgsMjYuOTExLDM5LjU3OSwyMi43NjEsMzkuNTc5eiIvPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo=" />
+</i>
+</div> </div>
+<div class="rz--name">
+German Torres </div>
+</div>
+<a class="rz-listing-content" href="">
+<div class="rz--heading">
+<div class="rz--main">
+<div class="rz-title">
+<h4>
+Forestal Arauco</h4>
+</div>
+<div class="rz-listing-tagline">
+Part-time </div>
+</div>
+</div>
+<div class="rz-listing-details rz-listing-details-content">
+<ul>
+<li>
+<span>
+Guardia Noche</span>
+</li>
+
+
+</ul>
+</div>
+<div class="rz-listing-bottom">
+<ul>
+<li>
+<span>
+400.000<br>al Mes </span>
+</li>
+</ul>
+</div>
+</a>
+</div>
+</li>
+<li class="rz-listing-item">
+<div class="rz-listing rz--featured rz-cover--author" data-id="2170" data-priority="1">
+<div class="rz-listing-author">
+<div class="rz--image">
+<div class="rz-avatar-placeholder">
+	<i class="material-icon-person">
+	<img width="16px" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE2LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgd2lkdGg9IjQ1LjUzMnB4IiBoZWlnaHQ9IjQ1LjUzMnB4IiB2aWV3Qm94PSIwIDAgNDUuNTMyIDQ1LjUzMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDUuNTMyIDQ1LjUzMjsiDQoJIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPHBhdGggZD0iTTIyLjc2NiwwLjAwMUMxMC4xOTQsMC4wMDEsMCwxMC4xOTMsMCwyMi43NjZzMTAuMTkzLDIyLjc2NSwyMi43NjYsMjIuNzY1YzEyLjU3NCwwLDIyLjc2Ni0xMC4xOTIsMjIuNzY2LTIyLjc2NQ0KCQlTMzUuMzQsMC4wMDEsMjIuNzY2LDAuMDAxeiBNMjIuNzY2LDYuODA4YzQuMTYsMCw3LjUzMSwzLjM3Miw3LjUzMSw3LjUzYzAsNC4xNTktMy4zNzEsNy41My03LjUzMSw3LjUzDQoJCWMtNC4xNTgsMC03LjUyOS0zLjM3MS03LjUyOS03LjUzQzE1LjIzNywxMC4xOCwxOC42MDgsNi44MDgsMjIuNzY2LDYuODA4eiBNMjIuNzYxLDM5LjU3OWMtNC4xNDksMC03Ljk0OS0xLjUxMS0xMC44OC00LjAxMg0KCQljLTAuNzE0LTAuNjA5LTEuMTI2LTEuNTAyLTEuMTI2LTIuNDM5YzAtNC4yMTcsMy40MTMtNy41OTIsNy42MzEtNy41OTJoOC43NjJjNC4yMTksMCw3LjYxOSwzLjM3NSw3LjYxOSw3LjU5Mg0KCQljMCwwLjkzOC0wLjQxLDEuODI5LTEuMTI1LDIuNDM4QzMwLjcxMiwzOC4wNjgsMjYuOTExLDM5LjU3OSwyMi43NjEsMzkuNTc5eiIvPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo=" />
+</i>
+</div> </div>
+<div class="rz--name">
+Marianela Soto </div>
+</div>
+<a class="rz-listing-content" href="">
+<div class="rz--heading">
+<div class="rz--main">
+<div class="rz-title">
+<h4>
+Paqueteria todo a Mil</h4>
+</div>
+<div class="rz-listing-tagline">
+Presencial </div>
+</div>
+</div>
+<div class="rz-listing-priority">
+<span class="rz--tag">
+Pagado </span>
+</div>
+<div class="rz-listing-details rz-listing-details-content">
+<ul>
+<li>
+<span>
+Reponedor </span>
+</li>
+
+</ul>
+</div>
+<div class="rz-listing-bottom">
+<ul>
+<li>
+<span>
+$15.000 <br> al Dia </span>
+</li>
+</ul>
+</div>
+</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<hr>
+				<div class="section-header padding-4000">
+					<div class="single-list-topics-icon">
+
+					<i>
+						<img width="32px" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNDc3Ljg2NyA0NzcuODY3IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0NzcuODY3IDQ3Ny44Njc7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxnPg0KCQk8cGF0aCBkPSJNNDYwLjgsMTE5LjQ2N2gtODUuMzMzdi0xMDIuNEMzNzUuNDY3LDcuNjQxLDM2Ny44MjYsMCwzNTguNCwwSDE3LjA2N0M3LjY0MSwwLDAsNy42NDEsMCwxNy4wNjdWNDA5LjYNCgkJCWMwLDM3LjcwMywzMC41NjQsNjguMjY3LDY4LjI2Nyw2OC4yNjdINDA5LjZjMzcuNzAzLDAsNjguMjY3LTMwLjU2NCw2OC4yNjctNjguMjY3VjEzNi41MzMNCgkJCUM0NzcuODY3LDEyNy4xMDgsNDcwLjIyNiwxMTkuNDY3LDQ2MC44LDExOS40Njd6IE0xMzYuNTMzLDg1LjMzM2gxMDIuNGM5LjQyNiwwLDE3LjA2Nyw3LjY0MSwxNy4wNjcsMTcuMDY3DQoJCQlzLTcuNjQxLDE3LjA2Ny0xNy4wNjcsMTcuMDY3aC0xMDIuNGMtOS40MjYsMC0xNy4wNjctNy42NDEtMTcuMDY3LTE3LjA2N1MxMjcuMTA4LDg1LjMzMywxMzYuNTMzLDg1LjMzM3ogTTI5MC4xMzMsNDA5LjZoLTIwNC44DQoJCQljLTkuNDI2LDAtMTcuMDY3LTcuNjQxLTE3LjA2Ny0xNy4wNjdzNy42NDEtMTcuMDY3LDE3LjA2Ny0xNy4wNjdoMjA0LjhjOS40MjYsMCwxNy4wNjcsNy42NDEsMTcuMDY3LDE3LjA2Nw0KCQkJUzI5OS41NTksNDA5LjYsMjkwLjEzMyw0MDkuNnogTTI5MC4xMzMsMzQxLjMzM2gtMjA0LjhjLTkuNDI2LDAtMTcuMDY3LTcuNjQxLTE3LjA2Ny0xNy4wNjdjMC05LjQyNiw3LjY0MS0xNy4wNjcsMTcuMDY3LTE3LjA2Nw0KCQkJaDIwNC44YzkuNDI2LDAsMTcuMDY3LDcuNjQxLDE3LjA2NywxNy4wNjdDMzA3LjIsMzMzLjY5MiwyOTkuNTU5LDM0MS4zMzMsMjkwLjEzMywzNDEuMzMzeiBNMjkwLjEzMywyNzMuMDY3aC0yMDQuOA0KCQkJYy05LjQyNiwwLTE3LjA2Ny03LjY0MS0xNy4wNjctMTcuMDY3YzAtOS40MjYsNy42NDEtMTcuMDY3LDE3LjA2Ny0xNy4wNjdoMjA0LjhjOS40MjYsMCwxNy4wNjcsNy42NDEsMTcuMDY3LDE3LjA2Nw0KCQkJQzMwNy4yLDI2NS40MjYsMjk5LjU1OSwyNzMuMDY3LDI5MC4xMzMsMjczLjA2N3ogTTI5MC4xMzMsMjA0LjhoLTIwNC44Yy05LjQyNiwwLTE3LjA2Ny03LjY0MS0xNy4wNjctMTcuMDY3DQoJCQljMC05LjQyNiw3LjY0MS0xNy4wNjcsMTcuMDY3LTE3LjA2N2gyMDQuOGM5LjQyNiwwLDE3LjA2Nyw3LjY0MSwxNy4wNjcsMTcuMDY3QzMwNy4yLDE5Ny4xNTksMjk5LjU1OSwyMDQuOCwyOTAuMTMzLDIwNC44eg0KCQkJIE00NDMuNzMzLDQwOS42YzAsMTguODUxLTE1LjI4MiwzNC4xMzMtMzQuMTMzLDM0LjEzM3MtMzQuMTMzLTE1LjI4Mi0zNC4xMzMtMzQuMTMzdi0yNTZoNjguMjY3VjQwOS42eiIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K" />
+					</i>
+				</div>
+					<h2>Blog & Noticias</h2>
+					<p>Mantente siempre informado </p>
+				</div><!--/.section-header-->
+				<div class="blog-content">
+					<div class="">
+						<div class="col-md-4 col-sm-6">
+							<div class="single-blog-item">
+								<div class="single-blog-item-img thumb-post">
+									<img src="https://www.bachillerato.uchile.cl/wp-content/uploads/2020/07/f165397-1-h.jpeg" alt="blog image">
+								</div>
+								<div class="single-blog-item-txt">
+									<h2><a href="#">Atención! Toma de exámenes PCR gratuitos jueves 22 de abril en Lanco y Malalhue</a></h2>
+									<h4>Posteado <span>por</span> <a href="#">Paul</a> Abril 2021</h4>
+									<p>
+										Para quienes estén interesados en tomarse el examen deben acudir este jueves a las plazas de ambas ciudades y en los horarios indicados.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="single-blog-item">
+								<div class="single-blog-item-img thumb-post">
+									<img src="https://i2.wp.com/www.lanco.cl/wp-content/uploads/2021/04/IMG-20210420-WA0045.jpg" alt="blog image">
+								</div>
+								<div class="single-blog-item-txt">
+									<h2><a href="#">CONAF evalúa acciones por intervención de curso de agua del glaciar en la Reserva Nacional Mocho </a></h2>
+									<h4>Posteado <span>por</span> <a href="#">Paul</a> Abril 2021</h4>
+									<p>
+Tras denuncias conocidas este lunes, la Corporación Nacional Forestal, a través del administrador de dicha reserva nacional y profesionales de fiscalización, ...								</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="single-blog-item">
+								<div class="single-blog-item-img thumb-post">
+									<img src="https://i2.wp.com/www.lanco.cl/wp-content/uploads/2021/04/yessica-gonzalez.png" alt="blog image">
+								</div>
+								<div class="single-blog-item-txt">
+									<h2><a href="#">Encargada de la Unidad de Deportes del municipio de Lanco invita hacer actividad física en banda horaria</a></h2>
+									<h4>Posteado <span>por</span> <a href="#">Paul</a> Abril 2021</h4>
+									<p>
+El horario dispuesto para la actividad física, en las comunas que se encuentran en cuarentena, permite hacer ejercicio sin tener que gestionar un permiso a ...									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+		</section><!--/.blog-->
+		<!--blog end -->
+
+		<!--subscription strat -->
+		<section id="contact"  class="subscription">
+			<div class="container">
+<style>
+	.inscripciones-space{
+		padding-bottom: 20px;
+	}
+</style>
+				<div class="section-title inscripciones-space">
+				<div class="section-header">
+					<i><img width="32" src="data:image/svg+xml;base64,PHN2ZyBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyNCAyNCIgaGVpZ2h0PSI1MTIiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJtMTkuMjUgNmgtMTQuMjV2LTJoMy4yNWMuNDE0IDAgLjc1LS4zMzYuNzUtLjc1di0yLjVjMC0uNDE0LS4zMzYtLjc1LS43NS0uNzVoLTQuMjVjLS41NTIgMC0xIC40NDctMSAxdjUuNDI0Yy0xLjc2My43NzQtMyAyLjUzMS0zIDQuNTc2djdjMCAuNTUzLjQ0OCAxIDEgMWg4Yy4wNDQgMCAuMDgyLS4wMi4xMjUtLjAyNS4wNDIuMDA3LjA4MS4wMjUuMTI1LjAyNWgyLjc1djRjMCAuNTUzLjQ0OCAxIDEgMXMxLS40NDcgMS0xdi00aDkuMjVjLjQxNCAwIC43NS0uMzM2Ljc1LS43NXYtNy41YzAtMi42MTktMi4xMzEtNC43NS00Ljc1LTQuNzV6bS0xMS4yNSAxMWgtNnYtNmMwLTEuNjU0IDEuMzQ2LTMgMy0zczMgMS4zNDYgMyAzeiIvPjwvc3ZnPg==" /></i>
+					<h2>Suscríbete</h2>
+					<p>Sé el primero en conocer las últimas actualizaciones y obtén una oferta exclusiva en nuestra gran inauguración. </p>
+				</div><!--/.section-header-->
+                </div>
+
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="subscription-input-group">
+							<form action="#">
+								<input type="email" class="subscription-input-form" placeholder="Correo Electrónico">
+								<button class="appsLand-btn subscribe-btn" onclick="window.location.href='#'">
+Inscribirse								</button>
+							</form>
+						</div>
+					</div>	
+				</div>
+			</div>
+
+
+
+<script>
+$(".instaapp").owlCarousel({
+items: 3,
+margin:6,
+loop: true,
+autoplay: false,
+smartSpeed: 1800,
+nav: true,
+navText: ['', ''],
+responsive: {
+320: {
+items: 3
+},
+480: {
+items: 2
+},
+576: {
+items: 3
+},
+768: {
+items: 3
+},
+992: {
+items: 3
+},
+1200: {
+items: 3
+}
+}
+});
+</script>
+
+
+
+		</section><!--/subscription-->	
+		<!--subscription end -->
+
+		<!--footer start-->
+		<footer id="footer"  class="footer">
+			<div class="container">
+				<div class="footer-menu">
+		           	<div class="row">
+			           	<div class="col-sm-3">
+			           		 <div class="navbar-header">
+			               <img width="140px" alt="Homepage" src={% static 'images/vivelanco-logo.svg' %}>
+				            </div><!--/.navbar-header-->
+			           	</div>
+
+		           </div>
+				</div>
+				<div class="hm-footer-copyright">
+					<div class="row">
+						<div class="col-sm-5">
+							<p>
+								&copy;Vive Lanco, XIV Región de Los Ríos - Chile | 2021. 
+							</p><!--/p-->
+						</div>
+						<div class="col-sm-7">
+							<div class="footer-social">
+								<span><i class="fa fa-phone"> +666 999 333</i></span>
+								<a href="#"><i class="fa fa-facebook"></i></a>	
+								<a href="#"><i class="fa fa-twitter"></i></a>
+								<a href="#"><i class="fa fa-linkedin"></i></a>
+								<a href="#"><i class="fa fa-google-plus"></i></a>
+							</div>
+						</div>
+					</div>
+					
+				</div><!--/.hm-footer-copyright-->
+			</div><!--/.container-->
+
+			<div id="scroll-Top">
+				<div class="return-to-top">
+					<i class="fa fa-angle-up " id="scroll-top" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back to Top" aria-hidden="true"></i>
+				</div>
+				
+			</div><!--/.scroll-Top-->
+			
+        </footer><!--/.footer-->
+		<!--footer end-->
+		
+		<!-- Include all js compiled plugins (below), or include individual files as needed -->
+
+
+
+        <!--modernizr.min.js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+		
+		<!--bootstrap.min.js-->
+        <script src="{% static 'assets/js/bootstrap.min.js'%}"></script>
+		
+		<!-- bootsnav js -->
+		<script src="{% static 'assets/js/bootsnav.js'%}"></script>
+
+        <!--feather.min.js-->
+        <script  src="{% static 'assets/js/feather.min.js'%}"></script>
+
+        <!-- counter js -->
+		<script src="{% static 'assets/js/jquery.counterup.min.js'%}"></script>
+		<script src="{% static 'assets/js/waypoints.min.js'%}"></script>
+
+        <!--slick.min.js-->
+        <script src="{% static 'assets/js/slick.min.js'%}"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+		     
+        <!--Custom JS-->
+        <script src="{% static 'assets/js/custom.js'%}"></script>
+        
+    </body>
+	
+</html>
