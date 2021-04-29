@@ -27,8 +27,7 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
-    path('inicio/', TemplateView.as_view(template_name="home_base/home_base.html")),
-
+    path('inicio/', views.clima, name='clima'),
 ] 
 
 urlpatterns += static(settings.MEDIA_URL,

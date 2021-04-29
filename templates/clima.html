@@ -1,0 +1,32 @@
+
+	<!--<h1>Busca tu Ciudad</h1>
+	<form method="GET">
+		<label for="city"></label>
+		<input type="text" id="city" value="{{ request.GET.city }}" name="city" placeholder="Nombre Ciudad">
+		<br>
+		<input type="submit" value="Buscar">
+	</form>
+
+    <br>
+	{% for key, value in clima.items %} 
+		<p>{{ key }}: {{ value }} </p>
+	{% endfor %} 
+
+
+-->
+    {% if clima %}
+
+		<p>{{ clima.region }}</p>
+
+
+		<p>{{ clima.temp_now }}</p>
+		<p>{{ clima.time }}</p>
+
+		<p>{{ clima.dayhour }}</p>
+		<p>{{ clima.weather_now }}</p>
+
+
+
+
+    {% endif %}
+
